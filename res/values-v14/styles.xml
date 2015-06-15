@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.AppCompat.Base.ActionBar" parent="@android:style/Widget.Holo.ActionBar" />
+    <style name="Widget.AppCompat.Light.Base.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar" />
+    <style name="Widget.AppCompat.Base.ActionBar.Solid" parent="@android:style/Widget.Holo.ActionBar.Solid" />
+    <style name="Widget.AppCompat.Light.Base.ActionBar.Solid" parent="@android:style/Widget.Holo.Light.ActionBar.Solid" />
+    <style name="Widget.AppCompat.Light.Base.ActionBar.Solid.Inverse" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse" />
+    <style name="Widget.AppCompat.Base.ActionButton" parent="@android:style/Widget.Holo.ActionButton" />
+    <style name="Widget.AppCompat.Light.Base.ActionButton" parent="@android:style/Widget.Holo.Light.ActionButton" />
+    <style name="Widget.AppCompat.Base.ActionButton.CloseMode" parent="@android:style/Widget.Holo.ActionButton.CloseMode" />
+    <style name="Widget.AppCompat.Light.Base.ActionButton.CloseMode" parent="@android:style/Widget.Holo.Light.ActionButton.CloseMode" />
+    <style name="Widget.AppCompat.Base.ActionButton.Overflow" parent="@android:style/Widget.Holo.ActionButton.Overflow" />
+    <style name="Widget.AppCompat.Light.Base.ActionButton.Overflow" parent="@android:style/Widget.Holo.Light.ActionButton.Overflow" />
+    <style name="Widget.AppCompat.Base.ActionBar.TabBar" parent="@android:style/Widget.Holo.ActionBar.TabBar" />
+    <style name="Widget.AppCompat.Light.Base.ActionBar.TabBar" parent="@android:style/Widget.Holo.Light.ActionBar.TabBar" />
+    <style name="Widget.AppCompat.Light.Base.ActionBar.TabBar.Inverse" parent="@android:style/Widget.Holo.Light.ActionBar.TabBar.Inverse" />
+    <style name="Widget.AppCompat.Base.ActionBar.TabView" parent="@android:style/Widget.Holo.ActionBar.TabView" />
+    <style name="Widget.AppCompat.Light.Base.ActionBar.TabView" parent="@android:style/Widget.Holo.Light.ActionBar.TabView" />
+    <style name="Widget.AppCompat.Light.Base.ActionBar.TabView.Inverse" parent="@android:style/Widget.Holo.Light.ActionBar.TabView.Inverse" />
+    <style name="Widget.AppCompat.Base.ActionBar.TabText" parent="@android:style/Widget.Holo.ActionBar.TabText" />
+    <style name="Widget.AppCompat.Light.Base.ActionBar.TabText" parent="@android:style/Widget.Holo.Light.ActionBar.TabText" />
+    <style name="Widget.AppCompat.Light.Base.ActionBar.TabText.Inverse" parent="@android:style/Widget.Holo.Light.ActionBar.TabText.Inverse" />
+    <style name="Widget.AppCompat.Light.Base.ActionMode.Inverse" parent="@android:style/Widget.Holo.Light.ActionMode.Inverse" />
+    <style name="TextAppearance.AppCompat.Widget.Base.ActionMode.Title" parent="@android:style/TextAppearance.Holo.Widget.ActionMode.Title" />
+    <style name="TextAppearance.AppCompat.Widget.Base.ActionMode.Subtitle" parent="@android:style/TextAppearance.Holo.Widget.ActionMode.Subtitle" />
+    <style name="TextAppearance.AppCompat.Widget.Base.ActionMode.Title.Inverse" parent="@android:style/TextAppearance.Holo.Widget.ActionMode.Title.Inverse" />
+    <style name="TextAppearance.AppCompat.Widget.Base.ActionMode.Subtitle.Inverse" parent="@android:style/TextAppearance.Holo.Widget.ActionMode.Subtitle.Inverse" />
+    <style name="TextAppearance.AppCompat.Widget.Base.ActionBar.Menu" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Menu" />
+    <style name="TextAppearance.AppCompat.Widget.Base.ActionBar.Title" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title" />
+    <style name="TextAppearance.AppCompat.Widget.Base.ActionBar.Subtitle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Subtitle" />
+    <style name="TextAppearance.AppCompat.Widget.Base.ActionBar.Title.Inverse" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title.Inverse" />
+    <style name="TextAppearance.AppCompat.Widget.Base.ActionBar.Subtitle.Inverse" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Subtitle.Inverse" />
+    <style name="Widget.AppCompat.Base.Spinner" parent="@android:style/Widget.Holo.Spinner" />
+    <style name="Widget.AppCompat.Light.Base.Spinner" parent="@android:style/Widget.Holo.Light.Spinner" />
+    <style name="Widget.AppCompat.Base.DropDownItem.Spinner" parent="@android:style/Widget.Holo.DropDownItem.Spinner" />
+    <style name="Widget.AppCompat.Light.Base.DropDownItem.Spinner" parent="@android:style/Widget.Holo.Light.DropDownItem.Spinner" />
+    <style name="Widget.AppCompat.Base.ListView.DropDown" parent="@android:style/Widget.Holo.ListView.DropDown" />
+    <style name="Widget.AppCompat.Light.Base.ListView.DropDown" parent="@android:style/Widget.Holo.ListView.DropDown" />
+    <style name="Widget.AppCompat.Base.ListView.Menu" parent="@android:style/Widget.ListView.Menu" />
+    <style name="Widget.AppCompat.Base.ListPopupWindow" parent="@android:style/Widget.Holo.ListPopupWindow" />
+    <style name="Widget.AppCompat.Light.Base.ListPopupWindow" parent="@android:style/Widget.Holo.Light.ListPopupWindow" />
+    <style name="Widget.AppCompat.Base.PopupMenu" parent="@android:style/Widget.Holo.PopupMenu" />
+    <style name="Widget.AppCompat.Light.Base.PopupMenu" parent="@android:style/Widget.Holo.Light.PopupMenu" />
+    <style name="TextAppearance.AppCompat.Base.Widget.PopupMenu.Large" parent="@android:style/TextAppearance.Holo.Widget.PopupMenu.Large" />
+    <style name="TextAppearance.AppCompat.Base.Widget.PopupMenu.Small" parent="@android:style/TextAppearance.Holo.Widget.PopupMenu.Small" />
+    <style name="TextAppearance.AppCompat.Light.Base.Widget.PopupMenu.Large" parent="@android:style/TextAppearance.Holo.Widget.PopupMenu.Large" />
+    <style name="TextAppearance.AppCompat.Light.Base.Widget.PopupMenu.Small" parent="@android:style/TextAppearance.Holo.Widget.PopupMenu.Small" />
+    <style name="TextAppearance.AppCompat.Base.SearchResult.Title" parent="@android:style/TextAppearance.Holo.SearchResult.Title" />
+    <style name="TextAppearance.AppCompat.Base.SearchResult.Subtitle" parent="@android:style/TextAppearance.Holo.SearchResult.Subtitle" />
+    <style name="TextAppearance.AppCompat.Light.Base.SearchResult.Title" parent="@android:style/TextAppearance.Holo.SearchResult.Title" />
+    <style name="TextAppearance.AppCompat.Light.Base.SearchResult.Subtitle" parent="@android:style/TextAppearance.Holo.SearchResult.Subtitle" />
+    <style name="Widget.AppCompat.Base.ActivityChooserView" parent="">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/abc_ab_share_pack_holo_dark</item>
+        <item name="android:divider">?dividerVertical</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:dividerPadding">6.0dip</item>
+    </style>
+    <style name="Theme.Base.AppCompat" parent="@android:style/Theme.Holo">
+        <item name="android:actionBarWidgetTheme">?actionBarWidgetTheme</item>
+        <item name="windowActionBar">?android:windowActionBar</item>
+        <item name="actionBarWidgetTheme">@null</item>
+        <item name="actionBarSize">?android:actionBarSize</item>
+        <item name="actionBarItemBackground">?android:actionBarItemBackground</item>
+        <item name="actionButtonStyle">?android:actionButtonStyle</item>
+        <item name="buttonBarStyle">?android:buttonBarStyle</item>
+        <item name="buttonBarButtonStyle">?android:buttonBarButtonStyle</item>
+        <item name="selectableItemBackground">?android:selectableItemBackground</item>
+        <item name="dividerVertical">?android:dividerVertical</item>
+        <item name="dividerHorizontal">?android:dividerHorizontal</item>
+        <item name="listPreferredItemHeight">?android:listPreferredItemHeight</item>
+        <item name="listPreferredItemHeightSmall">?android:listPreferredItemHeightSmall</item>
+        <item name="listPreferredItemHeightLarge">?android:listPreferredItemHeightLarge</item>
+        <item name="listPreferredItemPaddingLeft">?android:listPreferredItemPaddingLeft</item>
+        <item name="listPreferredItemPaddingRight">?android:listPreferredItemPaddingRight</item>
+    </style>
+    <style name="Theme.Base.AppCompat.Light" parent="@android:style/Theme.Holo.Light">
+        <item name="android:actionBarWidgetTheme">?actionBarWidgetTheme</item>
+        <item name="windowActionBar">?android:windowActionBar</item>
+        <item name="actionBarWidgetTheme">@null</item>
+        <item name="actionBarSize">?android:actionBarSize</item>
+        <item name="actionBarItemBackground">?android:actionBarItemBackground</item>
+        <item name="actionButtonStyle">?android:actionButtonStyle</item>
+        <item name="buttonBarStyle">?android:buttonBarStyle</item>
+        <item name="buttonBarButtonStyle">?android:buttonBarButtonStyle</item>
+        <item name="selectableItemBackground">?android:selectableItemBackground</item>
+        <item name="dividerVertical">?android:dividerVertical</item>
+        <item name="dividerHorizontal">?android:dividerHorizontal</item>
+        <item name="listPreferredItemHeight">?android:listPreferredItemHeight</item>
+        <item name="listPreferredItemHeightSmall">?android:listPreferredItemHeightSmall</item>
+        <item name="listPreferredItemHeightLarge">?android:listPreferredItemHeightLarge</item>
+        <item name="listPreferredItemPaddingLeft">?android:listPreferredItemPaddingLeft</item>
+        <item name="listPreferredItemPaddingRight">?android:listPreferredItemPaddingRight</item>
+    </style>
+    <style name="Theme.Base.AppCompat.Light.DarkActionBar" parent="@android:style/Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarWidgetTheme">?actionBarWidgetTheme</item>
+        <item name="windowActionBar">?android:windowActionBar</item>
+        <item name="actionBarWidgetTheme">@style/Theme.AppCompat</item>
+        <item name="actionBarSize">?android:actionBarSize</item>
+        <item name="actionBarItemBackground">?android:actionBarItemBackground</item>
+        <item name="actionButtonStyle">?android:actionButtonStyle</item>
+        <item name="buttonBarStyle">?android:buttonBarStyle</item>
+        <item name="buttonBarButtonStyle">?android:buttonBarButtonStyle</item>
+        <item name="selectableItemBackground">?android:selectableItemBackground</item>
+        <item name="dividerVertical">?android:dividerVertical</item>
+        <item name="dividerHorizontal">?android:dividerHorizontal</item>
+        <item name="listPreferredItemHeight">?android:listPreferredItemHeight</item>
+        <item name="listPreferredItemHeightSmall">?android:listPreferredItemHeightSmall</item>
+        <item name="listPreferredItemHeightLarge">?android:listPreferredItemHeightLarge</item>
+        <item name="listPreferredItemPaddingLeft">?android:listPreferredItemPaddingLeft</item>
+        <item name="listPreferredItemPaddingRight">?android:listPreferredItemPaddingRight</item>
+    </style>
+    <style name="Theme.Base.AppCompat.DialogWhenLarge" parent="@style/Theme.Base.AppCompat.DialogWhenLarge.Base" />
+    <style name="Theme.Base.AppCompat.Light.DialogWhenLarge" parent="@style/Theme.Base.AppCompat.Light.DialogWhenLarge.Base" />
+    <style name="Theme.VLC.Fullscreen" parent="@style/Theme.AppCompat.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="windowActionBar">false</item>
+    </style>
+    <style name="Theme.VLC" parent="@style/Theme.VLC.Apearance">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView</item>
+        <item name="android:actionBarStyle">@style/ActionBar</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:actionOverflowButtonStyle">@style/ActionBar.OverflowButton</item>
+        <item name="android:popupMenuStyle">@style/PopupMenuStyle</item>
+        <item name="android:homeAsUpIndicator">@drawable/timerset_back_blank_selector</item>
+        <item name="android:actionMenuTextAppearance">@style/MenuTextStyle</item>
+        <item name="android:actionMenuTextColor">@android:color/white</item>
+        <item name="android:actionBarWidgetTheme">@style/Theme.stylingactionbar.widget</item>
+    </style>
+    <style name="Theme.VLC.scene" parent="@style/Theme.VLC.Apearance">
+        <item name="android:actionBarStyle">@style/ActionBarScene</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:actionBarSize">50.0dip</item>
+        <item name="android:actionOverflowButtonStyle">@style/ActionBar.OverflowButton</item>
+        <item name="android:homeAsUpIndicator">@drawable/scene_back</item>
+        <item name="android:actionMenuTextAppearance">@style/MenuTextSceneStyle</item>
+        <item name="android:actionMenuTextColor">@android:color/black</item>
+        <item name="android:actionBarWidgetTheme">@style/Theme.stylingactionbar.widget</item>
+    </style>
+    <style name="Theme.VLC.K" parent="@style/Theme.VLC.Apearance.Black">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:actionBarStyle">@style/KActionBar</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:actionOverflowButtonStyle">@style/ActionBar.OverflowButton</item>
+        <item name="android:popupMenuStyle">@style/PopupMenuStyle</item>
+        <item name="android:homeAsUpIndicator">@drawable/timerset_back_blank_selector</item>
+        <item name="android:actionMenuTextAppearance">@style/MenuTextStyle</item>
+        <item name="android:actionMenuTextColor">@android:color/white</item>
+    </style>
+    <style name="Theme.VLC.Black" parent="@style/Theme.VLC.Apearance.Black">
+        <item name="android:actionBarStyle">@style/ActionBar</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:actionBarSize">50.0dip</item>
+        <item name="android:actionOverflowButtonStyle">@style/ActionBar.OverflowButton</item>
+    </style>
+    <style name="ActionBar" parent="@style/Widget.AppCompat.Light.ActionBar">
+        <item name="android:background">@drawable/actionbar_background</item>
+        <item name="android:titleTextStyle">@style/ActionBar.Text</item>
+    </style>
+    <style name="ActionBarScene" parent="@style/Widget.AppCompat.Light.ActionBar">
+        <item name="android:background">@drawable/actionbar_background</item>
+        <item name="android:titleTextStyle">@style/ActionBar.Text.scene</item>
+    </style>
+    <style name="KActionBar" parent="@style/Widget.AppCompat.Light.ActionBar">
+        <item name="android:background">@drawable/index_topbar</item>
+        <item name="android:titleTextStyle">@style/ActionBar.Text</item>
+    </style>
+    <style name="Theme.VLC.K.Transparent" parent="@style/Theme.VLC.K">
+        <item name="android:windowBackground">@color/transparent_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+    <style name="MenuTextStyle">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="Theme.Base.AppCompat.DialogWhenLarge.Base" parent="@android:style/Theme.Holo.DialogWhenLarge">
+        <item name="android:actionBarWidgetTheme">?actionBarWidgetTheme</item>
+        <item name="windowActionBar">?android:windowActionBar</item>
+        <item name="actionBarWidgetTheme">@null</item>
+        <item name="actionBarSize">?android:actionBarSize</item>
+        <item name="actionBarItemBackground">?android:actionBarItemBackground</item>
+        <item name="actionButtonStyle">?android:actionButtonStyle</item>
+        <item name="buttonBarStyle">?android:buttonBarStyle</item>
+        <item name="buttonBarButtonStyle">?android:buttonBarButtonStyle</item>
+        <item name="selectableItemBackground">?android:selectableItemBackground</item>
+        <item name="dividerVertical">?android:dividerVertical</item>
+        <item name="dividerHorizontal">?android:dividerHorizontal</item>
+        <item name="listPreferredItemHeight">?android:listPreferredItemHeight</item>
+        <item name="listPreferredItemHeightSmall">?android:listPreferredItemHeightSmall</item>
+        <item name="listPreferredItemHeightLarge">?android:listPreferredItemHeightLarge</item>
+        <item name="listPreferredItemPaddingLeft">?android:listPreferredItemPaddingLeft</item>
+        <item name="listPreferredItemPaddingRight">?android:listPreferredItemPaddingRight</item>
+    </style>
+    <style name="Theme.Base.AppCompat.Light.DialogWhenLarge.Base" parent="@android:style/Theme.Holo.Light.DialogWhenLarge">
+        <item name="android:actionBarWidgetTheme">?actionBarWidgetTheme</item>
+        <item name="windowActionBar">?android:windowActionBar</item>
+        <item name="actionBarWidgetTheme">@null</item>
+        <item name="actionBarSize">?android:actionBarSize</item>
+        <item name="actionBarItemBackground">?android:actionBarItemBackground</item>
+        <item name="actionButtonStyle">?android:actionButtonStyle</item>
+        <item name="buttonBarStyle">?android:buttonBarStyle</item>
+        <item name="buttonBarButtonStyle">?android:buttonBarButtonStyle</item>
+        <item name="selectableItemBackground">?android:selectableItemBackground</item>
+        <item name="dividerVertical">?android:dividerVertical</item>
+        <item name="dividerHorizontal">?android:dividerHorizontal</item>
+        <item name="listPreferredItemHeight">?android:listPreferredItemHeight</item>
+        <item name="listPreferredItemHeightSmall">?android:listPreferredItemHeightSmall</item>
+        <item name="listPreferredItemHeightLarge">?android:listPreferredItemHeightLarge</item>
+        <item name="listPreferredItemPaddingLeft">?android:listPreferredItemPaddingLeft</item>
+        <item name="listPreferredItemPaddingRight">?android:listPreferredItemPaddingRight</item>
+    </style>
+    <style name="RegisterMenuTextStyle">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="MenuTextSceneStyle">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="DropDownListView" parent="@android:style/Widget.Holo.ListView.DropDown">
+        <item name="android:listSelector">@drawable/ab_solid_kankunbar</item>
+    </style>
+    <style name="Theme.stylingactionbar.widget" parent="@android:style/Theme.Holo">
+        <item name="android:dropDownListViewStyle">@style/DropDownListView</item>
+        <item name="android:popupMenuStyle">@style/PopupMenuStyle</item>
+    </style>
+    <style name="Theme.VLC.Register" parent="@style/Theme.VLC.Apearance.Black">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:actionBarStyle">@style/KRegisterBar</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:actionOverflowButtonStyle">@style/ActionBar.OverflowButton</item>
+        <item name="android:popupMenuStyle">@style/PopupMenuStyle</item>
+        <item name="android:homeAsUpIndicator">@drawable/scene_back</item>
+        <item name="android:actionMenuTextAppearance">@style/RegisterMenuTextStyle</item>
+        <item name="android:actionMenuTextColor">@android:color/black</item>
+    </style>
+    <style name="Theme.VLC.K.HongMi" parent="@style/Theme.VLC.Apearance.Black">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:actionBarStyle">@style/KActionBar</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:actionOverflowButtonStyle">@style/ActionBar.OverflowButton</item>
+        <item name="android:popupMenuStyle">@style/PopupMenuStyle</item>
+        <item name="android:homeAsUpIndicator">@drawable/timerset_back_selector</item>
+        <item name="android:actionMenuTextAppearance">@style/MenuTextStyle</item>
+        <item name="android:actionMenuTextColor">@android:color/white</item>
+    </style>
+    <style name="PopupMenuStyle" parent="@style/Widget.AppCompat.Light.ListPopupWindow">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:popupBackground">@color/grey3</item>
+    </style>
+    <style name="KRegisterBar" parent="@style/Widget.AppCompat.Light.ActionBar">
+        <item name="android:background">@color/white</item>
+        <item name="android:titleTextStyle">@style/Register_titleStyle</item>
+    </style>
+    <style name="Register_titleStyle">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="Theme.VLC.K.Dialog" parent="@style/Theme.VLC.K">
+        <item name="android:windowBackground">@color/white_dialog</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+</resources>

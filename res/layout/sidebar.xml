@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:layout_gravity="start" android:id="@id/sidelist" android:background="?background_menu" android:paddingTop="?marginTopContent" android:nextFocusLeft="@id/sidelist" android:nextFocusRight="@id/sidelist" android:nextFocusUp="@id/sidelist" android:nextFocusDown="@id/sidelist" android:layout_width="208.0dip" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="?background_menu_divider" android:dividerHeight="0.20000005dip" android:fastScrollEnabled="true" android:nextFocusForward="@id/sidelist" />
+</merge>

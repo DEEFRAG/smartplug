@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+    <ImageView android:id="@id/iv_shadow" android:background="@drawable/shadow" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+    <LinearLayout android:id="@id/sv_left_menu" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/layout_left_menu" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="right" android:id="@id/sv_right_menu" android:paddingRight="30.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="right" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/layout_right_menu" android:layout_width="10.0dip" android:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>

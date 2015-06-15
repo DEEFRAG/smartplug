@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/general_prefs_category">
+        <PreferenceScreen android:title="@string/directories" android:key="directories" android:summary="@string/directories_summary" />
+        <ListPreference android:entries="@array/hardware_acceleration_list" android:title="@string/hardware_acceleration" android:key="hardware_acceleration" android:summary="@string/hardware_acceleration_summary" android:defaultValue="-1" android:entryValues="@array/hardware_acceleration_values" />
+        <ListPreference android:entries="@array/screen_orientation_list" android:title="@string/screen_orientation" android:key="screen_orientation" android:defaultValue="4" android:entryValues="@array/screen_orientation_values" />
+        <CheckBoxPreference android:title="@string/enable_black_theme" android:key="enable_black_theme" android:summary="@string/enable_black_theme_summary" android:defaultValue="false" />
+        <ListPreference android:persistent="true" android:entries="@array/subtitles_encoding_list" android:title="@string/subtitle_text_encoding" android:key="subtitle_text_encoding" android:defaultValue="" android:entryValues="@array/subtitles_encoding_values" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/extra_prefs_category">
+        <PreferenceScreen android:title="@string/interface_prefs_screen">
+            <PreferenceCategory android:title="@string/interface_secondary_display_category">
+                <Preference android:summary="@string/interface_secondary_display_category_summary" />
+                <CheckBoxPreference android:title="@string/enable_clone_mode" android:key="enable_clone_mode" android:summary="@string/enable_clone_mode_summary" android:defaultValue="false" />
+            </PreferenceCategory>
+            <PreferenceCategory android:title="@string/interface_other_category">
+                <CheckBoxPreference android:title="@string/enable_brightness_gesture" android:key="enable_brightness_gesture" android:summary="@string/enable_brightness_gesture_summary" android:defaultValue="true" />
+                <CheckBoxPreference android:title="@string/enable_jump_buttons" android:key="enable_jump_buttons" android:summary="@string/enable_jump_buttons_summary" android:defaultValue="false" />
+                <CheckBoxPreference android:title="@string/enable_headset_detection" android:key="enable_headset_detection" android:summary="@string/enable_headset_detection_summary" android:defaultValue="true" />
+                <CheckBoxPreference android:title="@string/enable_steal_remote_control" android:key="enable_steal_remote_control" android:summary="@string/enable_steal_remote_control_summary" android:defaultValue="false" />
+                <ListPreference android:persistent="true" android:entries="@array/audio_title_alignment_list" android:title="@string/audio_title_alignment" android:key="audio_title_alignment" android:defaultValue="0" android:entryValues="@array/audio_title_alignment_values" />
+            </PreferenceCategory>
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/performance_prefs_category">
+            <PreferenceCategory android:title="@string/performance_prefs_category">
+                <ListPreference android:entries="@array/chroma_formats" android:title="@string/chroma_format" android:key="chroma_format" android:summary="@string/chroma_format_summary" android:defaultValue="" android:entryValues="@array/chroma_formats_values" />
+                <ListPreference android:entries="@array/deblocking_list" android:title="@string/deblocking" android:key="deblocking" android:summary="@string/deblocking_summary" android:defaultValue="-1" android:entryValues="@array/deblocking_values" />
+                <CheckBoxPreference android:title="@string/enable_frame_skip" android:key="enable_frame_skip" android:summary="@string/enable_frame_skip_summary" android:defaultValue="false" />
+                <CheckBoxPreference android:title="@string/enable_time_stretching_audio" android:key="enable_time_stretching_audio" android:summary="@string/enable_time_stretching_audio_summary" android:defaultValue="false" />
+            </PreferenceCategory>
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/advanced_prefs_category">
+            <PreferenceCategory android:title="@string/advanced_prefs_category">
+                <ListPreference android:title="@string/aout" android:key="aout" android:summary="@string/aout_summary" />
+                <ListPreference android:title="@string/vout" android:key="vout" android:summary="@string/vout_summary" />
+                <Preference android:enabled="true" android:title="@string/clear_media_db" android:key="clear_media_db" />
+                <PreferenceScreen android:title="@string/clear_history" android:key="clear_history" />
+                <EditTextPreference android:title="@string/set_locale" android:key="set_locale" android:summary="@string/set_locale_detail" android:defaultValue="" />
+                <EditTextPreference android:maxLength="5" android:title="@string/network_caching" android:key="network_caching" android:summary="@string/network_caching_summary" android:defaultValue="" />
+                <Preference android:enabled="true" android:title="@string/quit" android:key="quit_app" />
+            </PreferenceCategory>
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/developer_prefs_category">
+            <PreferenceCategory android:title="@string/developer_prefs_category">
+                <ListPreference android:entries="@array/dev_hardware_decoder_list" android:title="@string/dev_hardware_decoder" android:key="dev_hardware_decoder" android:summary="@string/dev_hardware_decoder_summary" android:defaultValue="-1" android:entryValues="@array/dev_hardware_decoder_values" />
+                <CheckBoxPreference android:title="@string/enable_verbose_mode" android:key="enable_verbose_mode" android:summary="@string/enable_verbose_mode_summary" android:defaultValue="true" />
+                <PreferenceScreen android:title="@string/debug_logs" android:key="debug_logs" />
+                <Preference android:enabled="true" android:title="@string/dump_logcat" android:key="dump_logcat" />
+            </PreferenceCategory>
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>

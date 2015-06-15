@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/index_topbar" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:background="@drawable/index_topbar" android:layout_width="fill_parent" android:layout_height="@dimen/commoncontent_topmargin" />
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/displayLayout" android:background="@drawable/air_display_bg" android:paddingTop="@dimen/dimen_size_s10" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/tempLayout" android:layout_width="@dimen/dimen_size_s200" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                <TextView android:textColor="#ff0db26d" android:id="@id/moduleStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s20" android:text="@string/autoModelText" />
+                <LinearLayout android:gravity="center" android:id="@id/tempLayout" android:layout_width="@dimen/dimen_size_s120" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/dimen_size_s100" android:textStyle="bold" android:textColor="#ff0db26d" android:id="@id/tempCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="26" />
+                </LinearLayout>
+                <ImageView android:id="@id/du" android:background="@drawable/air_du_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_size_s5" android:layout_marginTop="@dimen/dimen_size_s20" />
+            </LinearLayout>
+            <ImageButton android:id="@id/openButton" android:background="@drawable/air_openbutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_size_s10" android:layout_marginTop="@dimen/dimen_size_s20" android:layout_toRightOf="@id/tempLayout" />
+            <LinearLayout android:id="@id/moduleLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/tempLayout" android:layout_centerHorizontal="true">
+                <ImageView android:id="@id/coldModule" android:background="@drawable/air_cold_off" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:background="@drawable/air_line1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_size_s5" android:layout_marginRight="@dimen/dimen_size_s5" />
+                <ImageView android:id="@id/hotModule" android:background="@drawable/air_hot_off" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:background="@drawable/air_line1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_size_s5" android:layout_marginRight="@dimen/dimen_size_s5" />
+                <ImageView android:id="@id/arefactionModule" android:background="@drawable/air_are_off" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:background="@drawable/air_line1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_size_s5" android:layout_marginRight="@dimen/dimen_size_s5" />
+                <ImageView android:id="@id/ventilateModule" android:background="@drawable/air_ventilate_off" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:background="@drawable/air_line1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_size_s5" android:layout_marginRight="@dimen/dimen_size_s5" />
+                <ImageView android:id="@id/autoModule" android:background="@drawable/air_auto_off" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <ImageView android:id="@id/line2" android:background="@drawable/air_line2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s10" android:layout_marginBottom="@dimen/dimen_size_s5" android:layout_below="@id/moduleLayout" android:layout_centerHorizontal="true" />
+            <RelativeLayout android:id="@id/windLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/line2" android:layout_centerHorizontal="true">
+                <ImageView android:id="@id/oneLevel" android:background="@drawable/air_wind1_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_size_s5" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/twoLevel" android:background="@drawable/air_wind2_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_size_s5" android:layout_toRightOf="@id/oneLevel" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/threeLevel" android:background="@drawable/air_wind3_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_size_s5" android:layout_toRightOf="@id/twoLevel" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/autoLevel" android:background="@drawable/air_windauto_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_size_s5" android:layout_toRightOf="@id/threeLevel" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/operationLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_size_s50" android:layout_marginTop="@dimen/dimen_size_s20" android:layout_marginRight="@dimen/dimen_size_s50">
+            <ImageButton android:id="@id/functionButton" android:background="@drawable/air_functionbutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageButton android:id="@id/addButton" android:background="@drawable/air_addbutton" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <ImageButton android:id="@id/reduceButton" android:background="@drawable/air_reducebutton" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <ImageView android:layout_gravity="center" android:id="@id/tempButton" android:background="@drawable/air_temp" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+            <ImageButton android:id="@id/windButton" android:background="@drawable/air_windbutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:background="@drawable/air_record_left_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+                <ImageButton android:id="@id/recordButton" android:background="@drawable/air_record_on" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:background="@drawable/air_record_right_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+                <ImageButton android:id="@id/playButton" android:background="@drawable/air_record_play_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

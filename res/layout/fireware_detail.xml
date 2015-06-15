@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff8f8f8" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/index_topbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@string/timer_img" />
+    <TextView android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/fireware_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginBottom="10.0dip" android:text="Socket" android:drawableTop="@drawable/addscene_type3" android:drawablePadding="10.0dip" />
+    <View android:background="#ffdedfe1" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="@dimen/set_margintop2" />
+    <ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="#fff8f8f8" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="70.0dip">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Current version" android:layout_centerVertical="true" />
+                <TextView android:id="@id/fire_now_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="SW_VER5.6" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="#ffdedfe1" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <View android:background="#ffdedfe1" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="@dimen/set_margintop2" />
+            <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="70.0dip">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="The latest version" android:layout_centerVertical="true" />
+                <TextView android:id="@id/fire_new_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="SW_VER5.8" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="#ffdedfe1" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/fire_sm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:text="1. Temperature reached\n 2. Utilities have a holiday" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <View android:background="#ffdedfe1" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <ImageButton android:layout_gravity="center_horizontal" android:id="@id/fireware_update_btn" android:background="@drawable/fireware_update_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/set_margintop2" android:contentDescription="@string/timer_img" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

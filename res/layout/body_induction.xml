@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/temperature_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/body_bar_title" android:background="@drawable/index_topbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@string/timer_img" />
+    <TextView android:textColor="@android:color/darker_gray" android:id="@id/tt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="70.0dip" android:text="@string/body_last_text" />
+    <TextView android:textSize="@dimen/bodytextsize" android:textColor="@color/blue" android:id="@id/body_lasttime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_below="@id/tt" />
+    <HorizontalScrollView android:id="@id/mainview" android:layout_width="fill_parent" android:layout_height="@dimen/barchartscrollbodyheight" android:layout_marginTop="@dimen/linechartscrollbodytopmartin">
+        <LinearLayout android:id="@id/bodychat_layout" android:background="@null" android:layout_width="@dimen/barchartscrollwidth" android:layout_height="@dimen/barchartscrollbodyheight">
+            <com.kankunit.smartplugcronus.customview.SuperBarChatView android:id="@id/body_bar" android:layout_width="@dimen/barchartscrollwidth" android:layout_height="@dimen/barchartscrollbodyheight" />
+        </LinearLayout>
+    </HorizontalScrollView>
+    <TextView android:id="@id/centerflag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <TextView android:textColor="@android:color/darker_gray" android:id="@id/info_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/linechartpasshourlbltopmargin" android:text="@string/body_info_text" android:layout_below="@id/mainview" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/night_light_layout" android:background="@drawable/night_light_timer_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/af_marginbuttom" android:layout_above="@id/device_buttom_flag" android:layout_centerHorizontal="true">
+        <TextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/body_ts_text" android:drawableLeft="@drawable/body_icon" android:drawablePadding="8.0dip" android:layout_centerVertical="true" />
+        <com.kankunit.smartplugcronus.customview.SwitchButton android:id="@id/body_push_en" android:layout_width="@dimen/timer_switch_width" android:layout_height="@dimen/timer_switch_height" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/body_timer_layout" android:background="@drawable/night_light_timer_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@id/device_buttom_flag" android:layout_centerHorizontal="true">
+        <TextView android:gravity="center_vertical" android:id="@id/body_timer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="Timing" android:layout_centerVertical="true" />
+        <com.kankunit.smartplugcronus.customview.SwitchButton android:id="@id/body_timer_en" android:layout_width="@dimen/timer_switch_width" android:layout_height="@dimen/timer_switch_height" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:textSize="13.0sp" android:textColor="@color/gray" android:layout_width="250.0dip" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/text_marginbuttom" android:text="Push the open set, as long as the sensing object will give you mobile phone push messages" android:layout_above="@id/device_buttom_flag" android:layout_centerHorizontal="true" />
+    <Button android:id="@id/timer_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:text="Timing" android:layout_alignTop="@id/tt" android:layout_alignParentRight="true" />
+    <TextView android:id="@id/device_buttom_flag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

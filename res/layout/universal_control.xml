@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/devicelist_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/titleLayout" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_size_s50" />
+    <AbsoluteLayout android:id="@id/totalLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/menuLayout" android:background="@drawable/universal_control_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/autoButton" android:background="@drawable/universal_auto_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s20" android:layout_centerHorizontal="true" />
+                <ImageView android:id="@id/openButton" android:background="@drawable/air_openbutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s20" android:layout_below="@id/autoButton" android:layout_centerHorizontal="true" />
+                <ImageView android:id="@id/avButton" android:background="@drawable/universal_av_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s20" android:layout_below="@id/openButton" android:layout_centerHorizontal="true" />
+                <ImageView android:id="@id/addButton" android:background="@drawable/universal_add_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s20" android:layout_below="@id/avButton" android:layout_centerHorizontal="true" />
+                <ImageView android:id="@id/minuButton" android:background="@drawable/universal_minu_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s20" android:layout_below="@id/addButton" android:layout_centerHorizontal="true" />
+                <ImageView android:id="@id/upButton" android:background="@drawable/universal_up_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s20" android:layout_below="@id/minuButton" android:layout_centerHorizontal="true" />
+                <ImageView android:id="@id/downButton" android:background="@drawable/universal_down_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s20" android:layout_below="@id/upButton" android:layout_centerHorizontal="true" />
+                <ImageView android:id="@id/okButton" android:background="@drawable/universal_ok_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s20" android:layout_below="@id/downButton" android:layout_centerHorizontal="true" />
+                <ImageView android:id="@id/backButton" android:background="@drawable/universal_back_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s20" android:layout_below="@id/okButton" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </ScrollView>
+        <AbsoluteLayout android:id="@id/panelLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="sdfasdfasdfasdfasdf" />
+        </AbsoluteLayout>
+    </AbsoluteLayout>
+</LinearLayout>

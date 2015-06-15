@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/index_topbar" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:orientation="horizontal" android:background="@drawable/index_topbar" android:layout_width="fill_parent" android:layout_height="@dimen/commoncontent_topmargin" />
+        <ScrollView android:id="@id/mainLayout" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s20">
+                <RelativeLayout android:id="@id/leftLayout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/image1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tv_control" />
+                    <TextView android:textColor="#ff727171" android:id="@id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s10" android:text="@string/tv_control" android:layout_below="@id/image1" android:layout_centerHorizontal="true" />
+                    <ImageView android:id="@id/image3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s20" android:src="@drawable/radio_control" android:layout_below="@id/text1" />
+                    <TextView android:textColor="#ff727171" android:id="@id/text3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s10" android:text="@string/radio_control" android:layout_below="@id/image3" android:layout_centerHorizontal="true" />
+                    <ImageView android:id="@id/image6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s20" android:src="@drawable/apple_control" android:layout_below="@id/text3" />
+                    <TextView android:textColor="#ff727171" android:id="@id/text6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s10" android:text="@string/apple_tv_control" android:layout_below="@id/image6" android:layout_centerHorizontal="true" />
+                    <ImageView android:id="@id/image8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s20" android:src="@drawable/remotecontrol_gh" android:layout_below="@id/text6" />
+                    <TextView android:textColor="#ff727171" android:id="@id/text8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s10" android:text="@string/gh_control" android:layout_below="@id/image8" android:layout_centerHorizontal="true" />
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s20" android:src="@null" android:layout_below="@id/text8" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_size_s40" android:layout_toRightOf="@id/leftLayout">
+                    <ImageView android:id="@id/image2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/air_control" />
+                    <TextView android:textColor="#ff727171" android:id="@id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s10" android:text="@string/air_control" android:layout_below="@id/image2" android:layout_centerHorizontal="true" />
+                    <ImageView android:id="@id/image4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s20" android:src="@drawable/mi_control" android:layout_below="@id/text2" />
+                    <TextView android:textColor="#ff727171" android:id="@id/text4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s10" android:text="@string/mi_control" android:layout_below="@id/image4" android:layout_centerHorizontal="true" />
+                    <ImageView android:id="@id/image5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s20" android:src="@drawable/universal_control" android:layout_below="@id/text4" />
+                    <TextView android:textColor="#ff727171" android:id="@id/text5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s10" android:text="@string/universal_control" android:layout_below="@id/image5" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/wait_press_bg" android:background="@drawable/wait_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/dimen_size_s20" android:textColor="@android:color/white" android:id="@id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s50" android:text="Press any key on the remote control to learn" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="@dimen/dimen_size_s20" android:textColor="@android:color/white" android:id="@id/waitText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Waiting......" android:layout_below="@id/text1" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/image" android:background="@drawable/wait_press_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s10" android:layout_below="@id/waitText" android:layout_centerHorizontal="true" />
+        <ImageButton android:id="@id/cancelImage" android:background="@drawable/air_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s30" android:layout_below="@id/image" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</FrameLayout>

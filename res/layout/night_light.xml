@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/scene_control_title_bg" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/device_titleinfo_bg" android:background="@drawable/device_titleinfo_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/timer_info_show_text_size" android:textColor="@color/white" android:id="@id/night_light_state_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/device_titleinfo_margin_left" android:layout_marginTop="@dimen/device_titleinfo_margin_top" android:drawableLeft="@drawable/night_light_title_clock" android:drawablePadding="5.0dip" />
+    </LinearLayout>
+    <ImageButton android:id="@id/night_light_btn" android:background="@drawable/night_light_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_centerHorizontal="true" android:contentDescription="@string/timer_img" />
+    <ImageButton android:id="@id/music_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_size_s10" android:layout_below="@id/device_titleinfo_bg" android:layout_alignParentRight="true" android:contentDescription="@null" />
+    <TextView android:id="@id/device_center_flag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <TextView android:textColor="@color/black" android:gravity="center" android:id="@id/night_open_loading" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_below="@id/night_light_btn" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/night_light_layout" android:background="@drawable/night_light_timer_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:layout_above="@id/device_buttom_flag" android:layout_centerHorizontal="true">
+        <TextView android:textColor="@color/black" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/device_timer" android:drawableLeft="@drawable/night_light_timer_clock" android:drawablePadding="8.0dip" android:layout_centerVertical="true" />
+        <com.kankunit.smartplugcronus.customview.SwitchButton android:id="@id/night_light_en" android:layout_width="@dimen/timer_switch_width" android:layout_height="@dimen/timer_switch_height" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:id="@id/device_buttom_flag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

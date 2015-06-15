@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.kankunit.smartplugcronus">
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <application android:hardwareAccelerated="true" android:icon="@drawable/tlogo" android:label="@string/app_name" android:logo="@drawable/tlogo" android:name="org.videolan.vlc.VLCApplication">
+        <activity android:configChanges="orientation|screenSize" android:icon="@drawable/tlogo" android:label="@string/app_name" android:name="com.kankunit.smartplugcronus.view.SplashActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:icon="@drawable/tlogo" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.kankunit.smartplugcronus.view.MessageActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:configChanges="orientation|screenSize" android:icon="@drawable/tlogo" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.kankunit.smartplugcronus.view.WebActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:name="com.kankunit.smartplugcronus.view.LoadingActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC.K.Transparent"/>
+        <activity android:configChanges="orientation|screenSize" android:icon="@drawable/tlogo" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.kankunit.smartplugcronus.view.MenuActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:configChanges="orientation|screenSize" android:icon="@drawable/tlogo" android:label="@string/wificonfiguretxt" android:name="com.kankunit.smartplugcronus.view.DeviceConfigureActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:configChanges="orientation|screenSize" android:icon="@drawable/tlogo" android:label="@string/wificonfiguretxt" android:name="com.kankunit.smartplugcronus.view.DeviceConfigureNewActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:configChanges="orientation|screenSize" android:icon="@drawable/tlogo" android:label="@string/searchdevice" android:name="com.kankunit.smartplugcronus.view.AddShortcutActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC.K"/>
+        <activity android:label="@string/app_name" android:name="com.kankunit.smartplugcronus.view.RemoteControlEditActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/setting" android:name="com.kankunit.smartplugcronus.view.SetinfoActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/timer_name_title" android:name="com.kankunit.smartplugcronus.view.TimerActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/timer_title_back" android:name="com.kankunit.smartplugcronus.view.TimerSetActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/addScene" android:name="com.kankunit.smartplugcronus.view.AddSceneActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/insertScene" android:name="com.kankunit.smartplugcronus.view.AddSceneDeviceListActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/scene_back_selector" android:label="@string/scene_title" android:name="com.kankunit.smartplugcronus.view.SceneControlActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC.scene"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/air_control" android:name="com.kankunit.smartplugcronus.view.AirControlActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/airControlRecord" android:name="com.kankunit.smartplugcronus.view.AirControlRecordActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/remotecontrol_info_panel" android:name="com.kankunit.smartplugcronus.view.RemoteControlPanelIRActivity" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/remotecontrol_info_panel" android:name="com.kankunit.smartplugcronus.view.RemoteControlPanelRFActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/electirct_title" android:name="com.kankunit.smartplugcronus.view.ProtectChargeGuildActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC.K.Transparent"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/electirct_title" android:name="com.kankunit.smartplugcronus.view.AddSceneGuildActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC.K.Transparent"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/electirct_title" android:name="com.kankunit.smartplugcronus.view.ConfigHelpActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/electirct_title" android:name="com.kankunit.smartplugcronus.view.ConfigHelp2Activity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:configChanges="orientation|screenSize" android:icon="@drawable/timerset_back_selector" android:label="@string/ddinfo_name" android:name="com.kankunit.smartplugcronus.view.DeviceDetailActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/delay_name_title" android:name="com.kankunit.smartplugcronus.view.DelaySettingActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/ddinfo_name_title" android:name="com.kankunit.smartplugcronus.view.DeviceDetailInfoActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/delay_add_name_title" android:name="com.kankunit.smartplugcronus.view.AddDelayTaskActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/delay_add_name_title" android:name="com.kankunit.smartplugcronus.view.AddDelayMiniActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/delay_name_title" android:name="com.kankunit.smartplugcronus.view.DelayMiniActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/delay_add_name_title" android:name="com.kankunit.smartplugcronus.view.AddDelayMiniRepeatActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:name="com.kankunit.smartplugcronus.view.ShowDialogActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC.K.Dialog"/>
+        <activity android:name="com.kankunit.smartplugcronus.view.GestureEditActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.kankunit.smartplugcronus.view.GestureVerifyActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="com.kankunit.smartplugcronus.view.UpdateTitleActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC.K.Transparent"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/timer_title_back" android:name="com.kankunit.smartplugcronus.view.LinkAgeActivity" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/updatefireware_tite" android:name="com.kankunit.smartplugcronus.view.UpdateFirewaresActivity" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/updatefireware_tite" android:name="com.kankunit.smartplugcronus.view.UpdateFirewareDetailActivity" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/faq_titlelable" android:name="com.kankunit.smartplugcronus.view.FAQActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/safeWorn" android:name="com.kankunit.smartplugcronus.view.WornActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/aboutUs" android:name="com.kankunit.smartplugcronus.view.AboutActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/tv_control" android:name="com.kankunit.smartplugcronus.view.TvControlActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/tv_control" android:name="com.kankunit.smartplugcronus.view.TvControlRecordActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/gh_control" android:name="com.kankunit.smartplugcronus.view.GhControlActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/gh_control" android:name="com.kankunit.smartplugcronus.view.GhControlRecordActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/mi_control" android:name="com.kankunit.smartplugcronus.view.MiControlActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/mi_control" android:name="com.kankunit.smartplugcronus.view.MiControlRecordActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/radio_control" android:name="com.kankunit.smartplugcronus.view.RadioControlActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/radio_control" android:name="com.kankunit.smartplugcronus.view.RadioControlRecordActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/apple_tv_control" android:name="com.kankunit.smartplugcronus.view.AppleTvControlActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/apple_tv_control" android:name="com.kankunit.smartplugcronus.view.AppleTvControlRecordActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/tmall_control" android:name="com.kankunit.smartplugcronus.view.TmallControlActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/acc_manager_title" android:name="com.kankunit.smartplugcronus.view.AccountManagerActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/my_score" android:name="com.kankunit.smartplugcronus.view.ScoreActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/update_nickname_title" android:name="com.kankunit.smartplugcronus.view.UpdateNicknameActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/update_pwd_title" android:name="com.kankunit.smartplugcronus.view.UpdatePwdActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/speech_set_title" android:name="com.kankunit.smartplugcronus.view.SpeechSetActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/tmall_control" android:name="com.kankunit.smartplugcronus.view.TmallControlRecordActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/garage_control" android:name="com.kankunit.smartplugcronus.view.GarageControlActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/garage_control" android:name="com.kankunit.smartplugcronus.view.GarageControlRecordActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/universal_control" android:name="com.kankunit.smartplugcronus.view.ShowMasterRCActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/universal_control" android:name="com.kankunit.smartplugcronus.view.ShowMasterRCRecordActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/universal_control" android:name="com.kankunit.smartplugcronus.view.MasterControlActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/curtain_control" android:name="com.kankunit.smartplugcronus.view.CurtainControlActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/updatefireware_tite" android:name="com.kankunit.smartplugcronus.view.UpdateFirewareActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/humiture_titlebar" android:name="com.kankunit.smartplugcronus.view.HumitureActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/scene_control_body" android:name="com.kankunit.smartplugcronus.view.BodyInductionActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/curtain_control" android:name="com.kankunit.smartplugcronus.view.CurtainControlRecordActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/selectPlug" android:name="com.kankunit.smartplugcronus.view.SelectPlugActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/temp" android:name="com.kankunit.smartplugcronus.view.HumitureTempActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/hum" android:name="com.kankunit.smartplugcronus.view.HumitureHumActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/lum" android:name="com.kankunit.smartplugcronus.view.HumitureLumActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/device_slight" android:name="com.kankunit.smartplugcronus.view.NightLightActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/remoteControlList" android:name="com.kankunit.smartplugcronus.view.RemoteControlListActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/electirct_title" android:name="com.kankunit.smartplugcronus.view.ElectricityChartActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/electirct_title" android:name="com.kankunit.smartplugcronus.view.HelpActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/store" android:name="com.kankunit.smartplugcronus.view.KShopActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/tlogo" android:label="@string/app_name" android:name="com.kankunit.smartplugcronus.view.LoginActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="@string/app_name" android:name="com.kankunit.smartplugcronus.view.FetchPWDActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <activity android:icon="@drawable/scene_back" android:label="@string/register_protocol" android:name="com.kankunit.smartplugcronus.view.RegisterProtocolActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC.Register"/>
+        <activity android:name="com.kankunit.smartplugcronus.customview.MipcaActivityCapture" android:screenOrientation="portrait" android:theme="@style/Theme.VLC.K.Transparent" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:icon="@drawable/scene_back" android:label="@string/register" android:name="com.kankunit.smartplugcronus.view.RegisterStep1Activity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC.Register"/>
+        <activity android:icon="@drawable/scene_back" android:label="@string/pleaseenterauthcode" android:name="com.kankunit.smartplugcronus.view.RegisterStep2Activity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC.Register"/>
+        <activity android:icon="@drawable/scene_back" android:label="@string/setaccountpwd" android:name="com.kankunit.smartplugcronus.view.RegisterStep3Activity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC.Register"/>
+        <activity android:icon="@drawable/scene_back" android:label="@string/forgetPassword" android:name="com.kankunit.smartplugcronus.view.ForgetPasswordStep1Activity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC.Register"/>
+        <activity android:icon="@drawable/scene_back" android:label="@string/pleaseenterauthcode" android:name="com.kankunit.smartplugcronus.view.ForgetPasswordStep2Activity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC.Register"/>
+        <activity android:icon="@drawable/scene_back" android:label="@string/redefinePwd" android:name="com.kankunit.smartplugcronus.view.ForgetPasswordStep3Activity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC.Register"/>
+        <activity android:icon="@drawable/timerset_back_selector" android:label="匹配测试" android:name="com.kankunit.smartplugcronus.view.TestActivity" android:screenOrientation="portrait" android:theme="@style/Theme.VLC"/>
+        <service android:exported="false" android:name="com.kankunit.smartplugcronus.service.MessageService">
+            <intent-filter>
+                <action android:name="com.kankunit.smartplugcronus.service.MessageService"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.kankunit.smartplugcronus.service.BaseUdpBroadcastService">
+            <intent-filter>
+                <action android:name="com.kankunit.smartplugcronus.service.BaseUdpBroadcastService"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.kankunit.smartplugcronus.service.UpdateService">
+            <intent-filter>
+                <action android:name="com.kankunit.smartplugcronus.service.UpdateService"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.kankunit.smartplugcronus.service.UpdateAppService">
+            <intent-filter>
+                <action android:name="com.kankunit.smartplugcronus.service.UpdateAppService"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.kankunit.smartplugcronus.service.BroadDeviceService">
+            <intent-filter>
+                <action android:name="com.kankunit.smartplugcronus.service.BroadDeviceService"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.kankunit.smartplugcronus.service.ReceiveDeviceService">
+            <intent-filter>
+                <action android:name="com.kankunit.smartplugcronus.service.ReceiveDeviceService"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.kankunit.smartplugcronus.service.ProtectService">
+            <intent-filter>
+                <action android:name="com.kankunit.smartplugcronus.service.ProtectService"/>
+            </intent-filter>
+        </service>
+        <activity android:configChanges="orientation|screenSize" android:icon="@drawable/tlogo" android:label="@string/app_name" android:launchMode="singleTask" android:name="org.videolan.vlc.gui.MainActivity" android:theme="@style/Theme.VLC"/>
+        <activity android:name="org.videolan.vlc.gui.CompatErrorActivity"/>
+        <activity android:name="org.videolan.vlc.gui.PreferencesActivity"/>
+        <activity android:label="@string/mediafiles" android:name="org.videolan.vlc.gui.BrowserActivity" android:theme="@style/Theme.VLC.NoTitleBar"/>
+        <activity android:name=".gui.DebugLogActivity"/>
+        <activity android:name="org.videolan.vlc.gui.NativeCrashActivity" android:process=":NativeCrashActivity" android:stateNotNeeded="true" android:theme="@style/Theme.VLC"/>
+        <activity android:configChanges="orientation|screenSize" android:name="org.videolan.vlc.gui.video.VideoPlayerActivity" android:theme="@style/Theme.VLC.Player">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="rtmp"/>
+                <data android:scheme="rtmpe"/>
+                <data android:scheme="rtmps"/>
+                <data android:scheme="rtp"/>
+                <data android:scheme="rtsp"/>
+                <data android:scheme="mms"/>
+                <data android:scheme="mmsh"/>
+                <data android:scheme="icyx"/>
+                <data android:scheme="httplive"/>
+                <data android:scheme="udp"/>
+                <data android:scheme="vlc"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:mimeType="video/*"/>
+                <data android:mimeType="audio/*"/>
+                <data android:scheme="rtmp"/>
+                <data android:scheme="rtmpe"/>
+                <data android:scheme="rtmps"/>
+                <data android:scheme="rtp"/>
+                <data android:scheme="rtsp"/>
+                <data android:scheme="mms"/>
+                <data android:scheme="mmsh"/>
+                <data android:scheme="icyx"/>
+                <data android:scheme="httplive"/>
+                <data android:scheme="udp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme=""/>
+                <data android:scheme="file"/>
+                <data android:scheme="ftp"/>
+                <data android:scheme="content"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:mimeType="video/*"/>
+                <data android:mimeType="audio/*"/>
+                <data android:mimeType="*/rmvb"/>
+                <data android:mimeType="*/avi"/>
+                <data android:mimeType="*/mkv"/>
+                <data android:mimeType="application/3gpp*"/>
+                <data android:mimeType="application/mp4"/>
+                <data android:mimeType="application/mpeg*"/>
+                <data android:mimeType="application/ogg"/>
+                <data android:mimeType="application/sdp"/>
+                <data android:mimeType="application/vnd.3gp*"/>
+                <data android:mimeType="application/vnd.apple.mpegurl"/>
+                <data android:mimeType="application/vnd.dvd*"/>
+                <data android:mimeType="application/vnd.dolby*"/>
+                <data android:mimeType="application/vnd.rn-realmedia*"/>
+                <data android:mimeType="application/x-iso9660-image"/>
+                <data android:mimeType="application/x-extension-mp4"/>
+                <data android:mimeType="application/x-flac"/>
+                <data android:mimeType="application/x-matroska"/>
+                <data android:mimeType="application/x-mpegURL"/>
+                <data android:mimeType="application/x-ogg"/>
+                <data android:mimeType="application/x-quicktimeplayer"/>
+                <data android:mimeType="application/x-shockwave-flash"/>
+                <data android:mimeType="application/xspf+xml"/>
+                <data android:mimeType="misc/ultravox"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme=""/>
+                <data android:scheme="file"/>
+                <data android:scheme="ftp"/>
+                <data android:scheme="content"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="*"/>
+                <data android:pathPattern=".*\\.3g2"/>
+                <data android:pathPattern=".*\\.3gp"/>
+                <data android:pathPattern=".*\\.3gp2"/>
+                <data android:pathPattern=".*\\.3gpp"/>
+                <data android:pathPattern=".*\\.amv"/>
+                <data android:pathPattern=".*\\.asf"/>
+                <data android:pathPattern=".*\\.avi"/>
+                <data android:pathPattern=".*\\.divx"/>
+                <data android:pathPattern=".*\\.drc"/>
+                <data android:pathPattern=".*\\.dv"/>
+                <data android:pathPattern=".*\\.f4v"/>
+                <data android:pathPattern=".*\\.flv"/>
+                <data android:pathPattern=".*\\.gvi"/>
+                <data android:pathPattern=".*\\.gxf"/>
+                <data android:pathPattern=".*\\.ismv"/>
+                <data android:pathPattern=".*\\.iso"/>
+                <data android:pathPattern=".*\\.m1v"/>
+                <data android:pathPattern=".*\\.m2v"/>
+                <data android:pathPattern=".*\\.m2t"/>
+                <data android:pathPattern=".*\\.m2ts"/>
+                <data android:pathPattern=".*\\.m3u8"/>
+                <data android:pathPattern=".*\\.mkv"/>
+                <data android:pathPattern=".*\\.mov"/>
+                <data android:pathPattern=".*\\.mp2"/>
+                <data android:pathPattern=".*\\.mp2v"/>
+                <data android:pathPattern=".*\\.mp4"/>
+                <data android:pathPattern=".*\\.mp4v"/>
+                <data android:pathPattern=".*\\.mpe"/>
+                <data android:pathPattern=".*\\.mpeg"/>
+                <data android:pathPattern=".*\\.mpeg1"/>
+                <data android:pathPattern=".*\\.mpeg2"/>
+                <data android:pathPattern=".*\\.mpeg4"/>
+                <data android:pathPattern=".*\\.mpg"/>
+                <data android:pathPattern=".*\\.mpv2"/>
+                <data android:pathPattern=".*\\.mts"/>
+                <data android:pathPattern=".*\\.mtv"/>
+                <data android:pathPattern=".*\\.mxf"/>
+                <data android:pathPattern=".*\\.mxg"/>
+                <data android:pathPattern=".*\\.nsv"/>
+                <data android:pathPattern=".*\\.nut"/>
+                <data android:pathPattern=".*\\.nuv"/>
+                <data android:pathPattern=".*\\.ogm"/>
+                <data android:pathPattern=".*\\.ogv"/>
+                <data android:pathPattern=".*\\.ogx"/>
+                <data android:pathPattern=".*\\.ps"/>
+                <data android:pathPattern=".*\\.rec"/>
+                <data android:pathPattern=".*\\.rm"/>
+                <data android:pathPattern=".*\\.rmvb"/>
+                <data android:pathPattern=".*\\.tod"/>
+                <data android:pathPattern=".*\\.ts"/>
+                <data android:pathPattern=".*\\.tts"/>
+                <data android:pathPattern=".*\\.vob"/>
+                <data android:pathPattern=".*\\.vro"/>
+                <data android:pathPattern=".*\\.webm"/>
+                <data android:pathPattern=".*\\.wm"/>
+                <data android:pathPattern=".*\\.wmv"/>
+                <data android:pathPattern=".*\\.wtv"/>
+                <data android:pathPattern=".*\\.xesc"/>
+                <data android:pathPattern=".*\\.3G2"/>
+                <data android:pathPattern=".*\\.3GP"/>
+                <data android:pathPattern=".*\\.3GP2"/>
+                <data android:pathPattern=".*\\.3GPP"/>
+                <data android:pathPattern=".*\\.AMV"/>
+                <data android:pathPattern=".*\\.ASF"/>
+                <data android:pathPattern=".*\\.AVI"/>
+                <data android:pathPattern=".*\\.DIVX"/>
+                <data android:pathPattern=".*\\.DRC"/>
+                <data android:pathPattern=".*\\.DV"/>
+                <data android:pathPattern=".*\\.F4V"/>
+                <data android:pathPattern=".*\\.FLV"/>
+                <data android:pathPattern=".*\\.GVI"/>
+                <data android:pathPattern=".*\\.GXF"/>
+                <data android:pathPattern=".*\\.ISMV"/>
+                <data android:pathPattern=".*\\.ISO"/>
+                <data android:pathPattern=".*\\.M1V"/>
+                <data android:pathPattern=".*\\.M2V"/>
+                <data android:pathPattern=".*\\.M2T"/>
+                <data android:pathPattern=".*\\.M2TS"/>
+                <data android:pathPattern=".*\\.M3U8"/>
+                <data android:pathPattern=".*\\.MKV"/>
+                <data android:pathPattern=".*\\.MOV"/>
+                <data android:pathPattern=".*\\.MP2"/>
+                <data android:pathPattern=".*\\.MP2V"/>
+                <data android:pathPattern=".*\\.MP4"/>
+                <data android:pathPattern=".*\\.MP4V"/>
+                <data android:pathPattern=".*\\.MPE"/>
+                <data android:pathPattern=".*\\.MPEG"/>
+                <data android:pathPattern=".*\\.MPEG1"/>
+                <data android:pathPattern=".*\\.MPEG2"/>
+                <data android:pathPattern=".*\\.MPEG4"/>
+                <data android:pathPattern=".*\\.MPG"/>
+                <data android:pathPattern=".*\\.MPV2"/>
+                <data android:pathPattern=".*\\.MTS"/>
+                <data android:pathPattern=".*\\.MTV"/>
+                <data android:pathPattern=".*\\.MXF"/>
+                <data android:pathPattern=".*\\.MXG"/>
+                <data android:pathPattern=".*\\.NSV"/>
+                <data android:pathPattern=".*\\.NUT"/>
+                <data android:pathPattern=".*\\.NUV"/>
+                <data android:pathPattern=".*\\.OGM"/>
+                <data android:pathPattern=".*\\.OGV"/>
+                <data android:pathPattern=".*\\.OGX"/>
+                <data android:pathPattern=".*\\.PS"/>
+                <data android:pathPattern=".*\\.REC"/>
+                <data android:pathPattern=".*\\.RM"/>
+                <data android:pathPattern=".*\\.RMVB"/>
+                <data android:pathPattern=".*\\.TOD"/>
+                <data android:pathPattern=".*\\.TS"/>
+                <data android:pathPattern=".*\\.TTS"/>
+                <data android:pathPattern=".*\\.VOB"/>
+                <data android:pathPattern=".*\\.VRO"/>
+                <data android:pathPattern=".*\\.WEBM"/>
+                <data android:pathPattern=".*\\.WM"/>
+                <data android:pathPattern=".*\\.WMV"/>
+                <data android:pathPattern=".*\\.WTV"/>
+                <data android:pathPattern=".*\\.XESC"/>
+                <data android:pathPattern=".*\\.3ga"/>
+                <data android:pathPattern=".*\\.a52"/>
+                <data android:pathPattern=".*\\.aac"/>
+                <data android:pathPattern=".*\\.ac3"/>
+                <data android:pathPattern=".*\\.adt"/>
+                <data android:pathPattern=".*\\.adts"/>
+                <data android:pathPattern=".*\\.aif"/>
+                <data android:pathPattern=".*\\.aifc"/>
+                <data android:pathPattern=".*\\.aiff"/>
+                <data android:pathPattern=".*\\.amr"/>
+                <data android:pathPattern=".*\\.aob"/>
+                <data android:pathPattern=".*\\.ape"/>
+                <data android:pathPattern=".*\\.awb"/>
+                <data android:pathPattern=".*\\.caf"/>
+                <data android:pathPattern=".*\\.dts"/>
+                <data android:pathPattern=".*\\.flac"/>
+                <data android:pathPattern=".*\\.it"/>
+                <data android:pathPattern=".*\\.m4a"/>
+                <data android:pathPattern=".*\\.m4b"/>
+                <data android:pathPattern=".*\\.m4p"/>
+                <data android:pathPattern=".*\\.mid"/>
+                <data android:pathPattern=".*\\.mka"/>
+                <data android:pathPattern=".*\\.mlp"/>
+                <data android:pathPattern=".*\\.mod"/>
+                <data android:pathPattern=".*\\.mpa"/>
+                <data android:pathPattern=".*\\.mp1"/>
+                <data android:pathPattern=".*\\.mp2"/>
+                <data android:pathPattern=".*\\.mp3"/>
+                <data android:pathPattern=".*\\.mpc"/>
+                <data android:pathPattern=".*\\.mpga"/>
+                <data android:pathPattern=".*\\.oga"/>
+                <data android:pathPattern=".*\\.ogg"/>
+                <data android:pathPattern=".*\\.oma"/>
+                <data android:pathPattern=".*\\.opus"/>
+                <data android:pathPattern=".*\\.ra"/>
+                <data android:pathPattern=".*\\.ram"/>
+                <data android:pathPattern=".*\\.rmi"/>
+                <data android:pathPattern=".*\\.s3m"/>
+                <data android:pathPattern=".*\\.spx"/>
+                <data android:pathPattern=".*\\.tta"/>
+                <data android:pathPattern=".*\\.voc"/>
+                <data android:pathPattern=".*\\.vqf"/>
+                <data android:pathPattern=".*\\.w64"/>
+                <data android:pathPattern=".*\\.wav"/>
+                <data android:pathPattern=".*\\.wma"/>
+                <data android:pathPattern=".*\\.wv"/>
+                <data android:pathPattern=".*\\.xa"/>
+                <data android:pathPattern=".*\\.xm"/>
+                <data android:pathPattern=".*\\.3GA"/>
+                <data android:pathPattern=".*\\.A52"/>
+                <data android:pathPattern=".*\\.AAC"/>
+                <data android:pathPattern=".*\\.AC3"/>
+                <data android:pathPattern=".*\\.ADT"/>
+                <data android:pathPattern=".*\\.ADTS"/>
+                <data android:pathPattern=".*\\.AIF"/>
+                <data android:pathPattern=".*\\.AIFC"/>
+                <data android:pathPattern=".*\\.AIFF"/>
+                <data android:pathPattern=".*\\.AMR"/>
+                <data android:pathPattern=".*\\.AOB"/>
+                <data android:pathPattern=".*\\.APE"/>
+                <data android:pathPattern=".*\\.AWB"/>
+                <data android:pathPattern=".*\\.CAF"/>
+                <data android:pathPattern=".*\\.DTS"/>
+                <data android:pathPattern=".*\\.FLAC"/>
+                <data android:pathPattern=".*\\.IT"/>
+                <data android:pathPattern=".*\\.M4A"/>
+                <data android:pathPattern=".*\\.M4B"/>
+                <data android:pathPattern=".*\\.M4P"/>
+                <data android:pathPattern=".*\\.MID"/>
+                <data android:pathPattern=".*\\.MKA"/>
+                <data android:pathPattern=".*\\.MLP"/>
+                <data android:pathPattern=".*\\.MOD"/>
+                <data android:pathPattern=".*\\.MPA"/>
+                <data android:pathPattern=".*\\.MP1"/>
+                <data android:pathPattern=".*\\.MP2"/>
+                <data android:pathPattern=".*\\.MP3"/>
+                <data android:pathPattern=".*\\.MPC"/>
+                <data android:pathPattern=".*\\.MPGA"/>
+                <data android:pathPattern=".*\\.OGA"/>
+                <data android:pathPattern=".*\\.OGG"/>
+                <data android:pathPattern=".*\\.OMA"/>
+                <data android:pathPattern=".*\\.OPUS"/>
+                <data android:pathPattern=".*\\.RA"/>
+                <data android:pathPattern=".*\\.RAM"/>
+                <data android:pathPattern=".*\\.RMI"/>
+                <data android:pathPattern=".*\\.S3M"/>
+                <data android:pathPattern=".*\\.SPX"/>
+                <data android:pathPattern=".*\\.TTA"/>
+                <data android:pathPattern=".*\\.VOC"/>
+                <data android:pathPattern=".*\\.VQF"/>
+                <data android:pathPattern=".*\\.W64"/>
+                <data android:pathPattern=".*\\.WAV"/>
+                <data android:pathPattern=".*\\.WMA"/>
+                <data android:pathPattern=".*\\.WV"/>
+                <data android:pathPattern=".*\\.XA"/>
+                <data android:pathPattern=".*\\.XM"/>
+            </intent-filter>
+        </activity>
+        <service android:name="org.videolan.vlc.audio.AudioService"/>
+        <receiver android:name="org.videolan.vlc.PhoneStateReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:label="VLC mini player" android:name="org.videolan.vlc.widget.VLCAppWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/vlcwidget"/>
+        </receiver>
+        <receiver android:name="org.videolan.vlc.RemoteControlClientReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON"/>
+                <action android:name="org.videolan.vlc.remote.PlayPause"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="api_key" android:value="9RRwzbMpxtLoz8WyGONSLU9m"/>
+        <service android:name="com.avos.avoscloud.PushService"/>
+        <receiver android:name="com.avos.avoscloud.AVBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.avos.avoscloud.AVDefaultNotificationReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="com.avos.UPDATE_STATUS"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.kankunit.smartplugcronus.push.CustomReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="com.avos.UPDATE_STATUS"/>
+                <action android:name="com.pushdemo.action"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="UMENG_APPKEY" android:value="54a9f4b0fd98c5b4030003be"/>
+        <meta-data android:name="UMENG_CHANNEL" android:value="360"/>
+    </application>
+</manifest>

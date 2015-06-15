@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/mainLayout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/text" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <Button android:id="@id/open" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s10" android:text="Magnetic door contact is open" />
+    <Button android:id="@id/close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s10" android:text="Magnetic door contact is closeed" />
+    <Button android:id="@id/ring" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s10" android:text="Doorbell" />
+    <Button android:id="@id/query" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s10" android:text="query data" />
+    <TextView android:id="@id/showData" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

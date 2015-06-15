@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="#fff4f4f4" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/topid" android:background="@drawable/index_topbar" android:layout_width="fill_parent" android:layout_height="@dimen/commoncontent_topmargin" />
+    <RelativeLayout android:id="@id/mobileLayout" android:background="@drawable/login_input_bg" android:layout_width="@dimen/dimen_size_s300" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s20" android:layout_below="@id/topid" android:layout_centerHorizontal="true">
+        <EditText android:textColor="@android:color/black" android:id="@id/mobilenum" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_size_s20" android:hint="Please enter your 11-digit mainland mobile phone number" android:singleLine="true" android:layout_centerVertical="true" android:inputType="number" />
+        <ImageButton android:id="@id/alertMessage" android:background="@drawable/login_question_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="Forgot password?" />
+    </RelativeLayout>
+    <Button android:id="@id/fetchauthcodebtn" android:background="@drawable/login_btn_blue" android:layout_width="@dimen/dimen_size_s300" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/fetchauthcode" android:layout_below="@id/mobileLayout" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s10" android:layout_below="@id/fetchauthcodebtn" android:layout_centerHorizontal="true">
+        <CheckBox android:textColor="@color/gray" android:id="@id/registerbottomtv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/agreethecontract" />
+        <TextView android:textSize="@dimen/dimen_size_s15" android:textColor="@color/blue" android:id="@id/registerProtocol" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_size_s1" android:text="Registration service agreement" />
+    </LinearLayout>
+</RelativeLayout>

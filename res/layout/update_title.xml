@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/updatetitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/updatetitle" android:layout_above="@id/update_title_edit" android:layout_centerHorizontal="true" />
+    <EditText android:textColor="@color/black" android:id="@id/update_title_edit" android:background="@drawable/update_title_text_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:layout_marginBottom="5.0dip" android:text="@string/update_title_smart" android:hint="@string/updateinfo" android:singleLine="true" android:layout_above="@id/update_title_center" android:layout_centerHorizontal="true" />
+    <View android:id="@id/update_title_center" android:layout_width="40.0dip" android:layout_height="15.0dip" android:layout_centerInParent="true" />
+    <ImageButton android:id="@id/update_title_close" android:background="@drawable/air_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/update_title_center" android:layout_below="@id/update_title_center" android:contentDescription="@string/timer_img" />
+    <ImageButton android:id="@id/update_title_ok" android:background="@drawable/air_ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/update_title_center" android:layout_below="@id/update_title_center" android:contentDescription="@string/timer_img" />
+</RelativeLayout>

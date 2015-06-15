@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/index_topbar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="horizontal" android:id="@id/faq_title_layout" android:background="@drawable/index_topbar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageButton android:id="@id/about_back" android:background="@drawable/nav_left_icon_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/dimen_size_s20" android:textColor="@android:color/white" android:id="@id/deviceList_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/FAQ" android:layout_toRightOf="@id/about_back" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/faq_tab_ng" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/blue" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="Frequently Asked Questions" android:layout_weight="1.0" />
+            <View android:layout_gravity="center" android:background="#ffc1c5cc" android:layout_width="1.0dip" android:layout_height="15.0dip" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/bbs_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="Online help" android:layout_weight="1.0" />
+        </LinearLayout>
+        <ExpandableListView android:id="@id/faqlist" android:background="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:listSelector="@drawable/listview_selector" android:divider="@android:color/white" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/shadowlayer" android:background="@null" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

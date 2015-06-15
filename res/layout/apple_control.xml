@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/mainLayout" android:background="@drawable/index_topbar" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/scene_control_menu" android:background="@null" android:visibility="gone" android:layout_width="@dimen/scene_control_menu_size" android:layout_height="@dimen/scene_control_menu_width" android:src="@drawable/scene_control_menu_more" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@string/timer_img" />
+    <RelativeLayout android:orientation="horizontal" android:background="@drawable/index_topbar" android:layout_width="fill_parent" android:layout_height="@dimen/commoncontent_topmargin" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:id="@id/displayLayout" android:background="@drawable/air_display_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s40">
+                    <ImageButton android:id="@id/menuButton" android:tag="apple_menu" android:background="@drawable/apple_menubutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:contentDescription="menu" />
+                    <ImageButton android:id="@id/stopButton" android:tag="apple_play" android:background="@drawable/apple_stopbutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s10" android:layout_below="@id/menuButton" android:layout_centerHorizontal="true" android:contentDescription="play" />
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:id="@id/operateLayout" android:background="@drawable/apple_tv_bg2" android:paddingLeft="@dimen/dimen_size_s6" android:paddingTop="@dimen/dimen_size_s6" android:paddingRight="@dimen/dimen_size_s6" android:paddingBottom="@dimen/dimen_size_s6" android:layout_width="@dimen/dimen_size_s200" android:layout_height="@dimen/dimen_size_s200" android:layout_marginTop="@dimen/dimen_size_s50" android:layout_below="@id/displayLayout" android:layout_centerHorizontal="true">
+                <ImageButton android:id="@id/upButton" android:tag="apple_up" android:background="@drawable/apple_upbutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:contentDescription="up" />
+                <ImageButton android:id="@id/downButton" android:tag="apple_down" android:background="@drawable/apple_downbutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:contentDescription="down" />
+                <ImageButton android:id="@id/leftButton" android:tag="apple_left" android:background="@drawable/apple_leftbutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="left" />
+                <ImageButton android:id="@id/rightButton" android:tag="apple_right" android:background="@drawable/apple_rightbutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="right" />
+                <ImageButton android:id="@id/okButton" android:tag="apple_ok" android:background="@drawable/apple_okbutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:contentDescription="ok" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

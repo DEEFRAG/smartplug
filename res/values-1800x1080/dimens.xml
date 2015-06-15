@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="red_point">10.0dip</dimen>
+    <dimen name="bartextsize">15.0sp</dimen>
+    <dimen name="actionbar_margin_top">56.0dip</dimen>
+    <dimen name="netconfigure_question_topmargin">20.0dip</dimen>
+    <dimen name="netconfigure_confirmbtn_topmargin">10.0dip</dimen>
+    <dimen name="netconfigure_wifissidrl_topmargin">52.0dip</dimen>
+    <dimen name="netconfigure_ssidicon_leftmargin">10.0dip</dimen>
+    <dimen name="netconfigure_ssidtv_txtsize">16.0sp</dimen>
+    <dimen name="netconfigure_ssidtv_leftmargin">50.0dip</dimen>
+    <dimen name="netconfigure_pwdrl_topmargin">15.0dip</dimen>
+    <dimen name="netconfigure_pwdet_leftmargin">14.0dip</dimen>
+    <dimen name="netconfigure_whynotsuccessd_txtsize">12.0sp</dimen>
+    <dimen name="netconfigure_trangleicon_leftmargin">5.0dip</dimen>
+    <dimen name="netconfigure_questionmark_leftmargin">5.0dip</dimen>
+    <dimen name="netconfigure_questionmark_rightmargin">10.0dip</dimen>
+    <dimen name="netconfigure_eye_rightmargin">20.0dip</dimen>
+    <dimen name="directconfig_bg_topmargin">19.0dip</dimen>
+    <dimen name="directconfig_dodirectconfigure_topmargin">240.0dip</dimen>
+    <dimen name="directconfig_wave_topmargin">290.0dip</dimen>
+    <dimen name="directconfig_description_topmargin">370.0dip</dimen>
+    <dimen name="buttonminheight">1.0dip</dimen>
+    <dimen name="buttonminwidth">1.0dip</dimen>
+</resources>

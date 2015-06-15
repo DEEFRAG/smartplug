@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffc1c5cc" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/listgroup" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_size_s60">
+        <ImageView android:id="@id/smallKImage" android:background="@drawable/devicelist_k" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_size_s20" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/dimen_size_s20" android:textColor="#ff8b8b89" android:id="@id/listgroupName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_size_s10" android:layout_toRightOf="@id/smallKImage" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/openlistButton" android:background="@drawable/devicelist_closelist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_size_s5" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

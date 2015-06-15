@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/devicelist_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:background="@drawable/index_topbar" android:layout_width="fill_parent" android:layout_height="@dimen/commoncontent_topmargin" />
+    <GridView android:gravity="center" android:id="@id/plugGrid" android:background="@android:color/white" android:paddingLeft="@dimen/dimen_size_s10" android:paddingTop="@dimen/dimen_size_s30" android:paddingRight="@dimen/dimen_size_s10" android:layout_width="fill_parent" android:layout_height="fill_parent" android:verticalSpacing="10.0dip" android:stretchMode="columnWidth" android:columnWidth="90.0dip" android:numColumns="3" />
+</LinearLayout>

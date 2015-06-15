@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/mainbg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/commoncontent_topmargin">
+        <RelativeLayout android:background="@drawable/master_control_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <FrameLayout android:id="@id/mainview" android:layout_width="472.0dip" android:layout_height="fill_parent" android:layout_marginLeft="-60.0dip" android:layout_marginTop="-30.0dip" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:background="@drawable/air_record_left_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+                <ImageButton android:id="@id/recordButton" android:background="@drawable/air_record_on" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <RelativeLayout android:background="@drawable/air_record_right_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+                <ImageButton android:id="@id/playButton" android:background="@drawable/air_record_play_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/wait_press_bg" android:background="@color/air_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/dimen_size_s20" android:textColor="@android:color/white" android:id="@id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s50" android:text="Press any key on the remote control to learn" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="@dimen/dimen_size_s20" android:textColor="@android:color/white" android:id="@id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Waiting......" android:layout_below="@id/text1" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/image" android:background="@drawable/wait_press_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/text2" android:layout_centerHorizontal="true" />
+            <ImageButton android:id="@id/cancelImage" android:background="@drawable/air_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s30" android:layout_below="@id/image" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

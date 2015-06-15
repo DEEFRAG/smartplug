@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/index_topbar" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:background="@drawable/index_topbar" android:layout_width="fill_parent" android:layout_height="@dimen/commoncontent_topmargin" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:id="@id/displayLayout" android:background="@drawable/air_display_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_size_s30" android:layout_marginTop="@dimen/dimen_size_s20" android:layout_marginRight="@dimen/dimen_size_s20">
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageButton android:id="@id/openButton" android:background="@drawable/tv_openbutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:contentDescription="Set-top box switch" />
+                        <TextView android:textSize="@dimen/dimen_size_s10" android:textColor="#ffb3b3b3" android:id="@id/openText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Set-top box switch" android:layout_below="@id/openButton" android:layout_centerHorizontal="true" />
+                        <ImageButton android:id="@id/homeButton" android:background="@drawable/tv_homebutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s25" android:layout_below="@id/openText" android:layout_centerHorizontal="true" android:contentDescription="Home page" />
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_size_s25">
+                        <ImageButton android:id="@id/avButton" android:background="@drawable/tv_avbutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:contentDescription="av" />
+                        <ImageButton android:id="@id/autoButton" android:background="@drawable/tv_autobutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s40" android:layout_below="@id/avButton" android:layout_centerHorizontal="true" android:contentDescription="Numeric keypad" />
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_size_s25">
+                        <ImageButton android:id="@id/addButton" android:background="@drawable/tv_addbutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:contentDescription="Sound plus" />
+                        <ImageButton android:id="@id/minuButton" android:background="@drawable/tv_minubutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/addButton" android:layout_centerHorizontal="true" android:contentDescription="Sound Less" />
+                        <ImageView android:background="@drawable/tv_control_voice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_size_s25">
+                        <ImageButton android:id="@id/open2Button" android:background="@drawable/air_openbutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:contentDescription="TV switch" />
+                        <TextView android:textSize="@dimen/dimen_size_s10" android:textColor="#ffb3b3b3" android:id="@id/open2Text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="TV switch" android:layout_below="@id/open2Button" android:layout_centerHorizontal="true" />
+                        <ImageButton android:id="@id/backButton" android:background="@drawable/tv_backbutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s25" android:layout_below="@id/open2Text" android:layout_centerHorizontal="true" android:contentDescription="Undo" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:id="@id/operateLayout" android:layout_width="@dimen/dimen_size_s200" android:layout_height="@dimen/dimen_size_s200" android:layout_marginTop="@dimen/dimen_size_s50" android:layout_below="@id/displayLayout" android:layout_centerHorizontal="true">
+                <ImageButton android:id="@id/upButton" android:background="@drawable/tv_upbutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:contentDescription="Up" />
+                <ImageButton android:id="@id/downButton" android:background="@drawable/tv_downbutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:contentDescription="Down" />
+                <ImageButton android:id="@id/add2Button" android:background="@drawable/tv_add_t_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="Right" />
+                <ImageButton android:id="@id/minu2Button" android:background="@drawable/tv_minu_t_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="Left" />
+                <ImageButton android:id="@id/okButton" android:background="@drawable/tv_okbutton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:contentDescription="OK" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RelativeLayout android:background="@drawable/air_record_left_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+                    <ImageButton android:id="@id/recordButton" android:background="@drawable/air_record_on" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <RelativeLayout android:background="@drawable/air_record_right_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+                    <ImageButton android:id="@id/playButton" android:background="@drawable/air_record_play_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/autoLayout" android:background="#ff313232" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/tv_control_auto_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="@dimen/dimen_size_s220" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s20">
+                    <ImageButton android:id="@id/button1" android:background="@drawable/tv_1_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:contentDescription="1" />
+                    <ImageButton android:id="@id/button2" android:background="@drawable/tv_2_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:contentDescription="2" />
+                    <ImageButton android:id="@id/button3" android:background="@drawable/tv_3_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:contentDescription="3" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="@dimen/dimen_size_s220" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s15">
+                    <ImageButton android:id="@id/button4" android:background="@drawable/tv_4_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:contentDescription="4" />
+                    <ImageButton android:id="@id/button5" android:background="@drawable/tv_5_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:contentDescription="5" />
+                    <ImageButton android:id="@id/button6" android:background="@drawable/tv_6_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:contentDescription="6" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="@dimen/dimen_size_s220" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s15">
+                    <ImageButton android:id="@id/button7" android:background="@drawable/tv_7_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:contentDescription="7" />
+                    <ImageButton android:id="@id/button8" android:background="@drawable/tv_8_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:contentDescription="8" />
+                    <ImageButton android:id="@id/button9" android:background="@drawable/tv_9_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:contentDescription="9" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="@dimen/dimen_size_s220" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s15">
+                    <ImageButton android:id="@id/button0" android:background="@drawable/tv_0_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:contentDescription="0" />
+                    <ImageButton android:id="@id/autoButton1" android:background="@drawable/tv_autodefine_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:contentDescription="Custom 1" />
+                    <ImageButton android:id="@id/autoButton2" android:background="@drawable/tv_autodefine_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:contentDescription="Custom 2" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="@dimen/dimen_size_s220" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s15">
+                    <ImageButton android:id="@id/autoButton3" android:background="@drawable/tv_autodefine_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:contentDescription="Custom 3" />
+                    <ImageButton android:id="@id/autoButton4" android:background="@drawable/tv_autodefine_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:contentDescription="Custom 4" />
+                    <Button android:textColor="#ff00a0e9" android:id="@id/cancelButton" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cancel" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/wait_press_bg" android:background="@color/air_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/dimen_size_s20" android:textColor="@android:color/white" android:id="@id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s50" android:text="Press any key on the remote control to learn" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="@dimen/dimen_size_s20" android:textColor="@android:color/white" android:id="@id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Waiting......" android:layout_below="@id/text1" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/image" android:background="@drawable/wait_press_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/text2" android:layout_centerHorizontal="true" />
+            <ImageButton android:id="@id/cancelImage" android:background="@drawable/air_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s30" android:layout_below="@id/image" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:background="@color/none_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/adddevice_winbg" android:background="@color/none_color" android:layout_width="780.0dip" android:layout_height="500.0dip">
+        <RelativeLayout android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageButton android:id="@id/lefticon" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/addstuff_controlpannel_icon" android:contentDescription="@string/contentDescription" />
+            <TextView android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Remote control" android:layout_below="@id/lefticon" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <ImageButton android:id="@id/middleicon" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/addstuff_device_icon" android:contentDescription="@string/contentDescription" />
+            <TextView android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Configuration" android:layout_below="@id/middleicon" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageButton android:id="@id/righticon" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/righticon" android:contentDescription="@string/contentDescription" />
+            <TextView android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Search Equipment" android:layout_below="@id/righticon" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

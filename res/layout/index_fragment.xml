@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/parentRL" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/msgbg" android:background="@drawable/msg_bg" android:layout_width="wrap_content" android:layout_height="450.0dip" android:layout_marginTop="-451.0dip">
+        <ListView android:id="@id/msglistview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/msgvbar" android:background="@drawable/index_msgvbar_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/msgbg">
+        <RelativeLayout android:background="@drawable/home_msg_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageButton android:id="@id/msgbtn" android:background="@color/none_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/index_msgbtn" android:layout_centerInParent="true" android:contentDescription="@string/contentDescription" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <android.support.v4.widget.SwipeRefreshLayout android:id="@id/id_swipe_ly" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/msgvbar">
+        <com.kankunit.smartplugcronus.customview.IndexGridView android:gravity="center" android:id="@id/indexgridview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@color/none_color" android:stretchMode="columnWidth" android:columnWidth="90.0dip" android:numColumns="auto_fit" android:layout_centerHorizontal="true" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

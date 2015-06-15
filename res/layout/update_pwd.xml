@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/topid" android:background="@drawable/index_topbar" android:layout_width="fill_parent" android:layout_height="@dimen/commoncontent_topmargin" />
+    <RelativeLayout android:paddingLeft="@dimen/dimen_size_s20" android:paddingRight="@dimen/dimen_size_s20" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/topid">
+        <RelativeLayout android:id="@id/mobileLayout" android:background="@drawable/login_input_bg" android:layout_width="@dimen/dimen_size_s300" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s20" android:layout_below="@id/toptv" android:layout_centerHorizontal="true">
+            <EditText android:textColor="@android:color/black" android:id="@id/pwd" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_size_s20" android:hint="Please enter your password" android:singleLine="true" android:layout_centerVertical="true" android:inputType="textPassword" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/mobileLayout2" android:background="@drawable/login_input_bg" android:layout_width="@dimen/dimen_size_s300" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s15" android:layout_below="@id/mobileLayout" android:layout_centerHorizontal="true">
+            <EditText android:textColor="@android:color/black" android:id="@id/confirmpwd" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_size_s20" android:hint="Please enter the password again" android:singleLine="true" android:layout_centerVertical="true" android:inputType="textPassword" />
+        </RelativeLayout>
+        <Button android:textColor="@color/white" android:id="@id/finishbtn" android:background="@drawable/loginbtn_selector" android:layout_width="@dimen/dimen_size_s300" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="Finish" android:layout_below="@id/mobileLayout2" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

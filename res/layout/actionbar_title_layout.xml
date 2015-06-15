@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/hongmiheaderbar" android:background="@drawable/index_topbar" android:layout_width="fill_parent" android:layout_height="47.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/hongmi_header_back" android:background="@null" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_marginLeft="0.0dip" android:src="@drawable/timerset_back_blank_selector" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/contentDescription" />
+    <TextView android:textSize="20.0sp" android:textColor="@color/white" android:id="@id/hongmi_header_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:layout_toRightOf="@id/hongmi_header_back" android:layout_centerVertical="true" />
+    <ImageButton android:id="@id/hongmi_header_rightbtn" android:background="@null" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/home_nav_righticon" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/contentDescription" />
+</RelativeLayout>

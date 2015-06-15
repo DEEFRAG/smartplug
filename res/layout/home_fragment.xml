@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/deviceconfigure_mainbg" android:background="@drawable/mainbg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/topbar" android:background="@drawable/index_topbar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/nav_left_icon" android:background="@color/none_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:src="@drawable/nav_left_icon_selector" android:layout_centerVertical="true" android:contentDescription="@string/contentDescription" />
+        <ImageView android:id="@id/menu_red_point" android:background="@drawable/fireware_red_point" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="15.0dip" android:contentDescription="@string/timer_img" />
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/switchbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_centerHorizontal="true">
+            <Button android:textSize="15.0sp" android:textColor="@color/netconfigure_tabselected_color" android:id="@id/indexbtn" android:background="@drawable/home_top_leftbg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="1.0dip" android:minHeight="1.0dip" android:text="Equipment" />
+            <Button android:textSize="15.0sp" android:textColor="@android:color/white" android:id="@id/scenebtn" android:background="@drawable/home_top_rightboard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="1.0dip" android:minHeight="1.0dip" android:text="Scene" />
+        </LinearLayout>
+        <ImageButton android:id="@id/nav_right_icon" android:background="@color/none_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="0.0dip" android:src="@drawable/nav_right_icon_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/contentDescription" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/fragment_content" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/topbar" />
+    <RelativeLayout android:id="@id/shadowlayer" android:background="@null" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

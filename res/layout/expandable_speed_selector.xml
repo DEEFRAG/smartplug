@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <SeekBar android:id="@id/speed_seek_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="200" />
+        <RelativeLayout android:id="@id/relative_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.25" android:layout_alignParentLeft="true" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1.00" android:layout_centerHorizontal="true" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4.00" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <Button android:layout_gravity="center_vertical" android:id="@id/reset" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1x" style="?android:attr/buttonStyleSmall" />
+</LinearLayout>

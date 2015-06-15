@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/mainbg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:background="@null" android:layout_width="fill_parent" android:layout_height="44.0dip" />
+    <ScrollView android:background="@color/white" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:gravity="bottom" android:background="@drawable/store1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageButton android:id="@id/buybtn1" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="50.0dip" android:layout_marginBottom="7.0dip" android:src="@drawable/buybtnselector" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="bottom" android:background="@drawable/store2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <ImageButton android:id="@id/buybtn2" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="50.0dip" android:layout_marginBottom="7.0dip" android:src="@drawable/buybtnselector" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="bottom" android:background="@drawable/store3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <ImageButton android:id="@id/buybtn3" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="50.0dip" android:layout_marginBottom="7.0dip" android:src="@drawable/buybtnselector" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="bottom" android:background="@drawable/store4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <ImageButton android:id="@id/buybtn4" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="50.0dip" android:layout_marginBottom="7.0dip" android:src="@drawable/buybtnselector" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="bottom" android:background="@drawable/store5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <ImageButton android:id="@id/buybtn5" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="50.0dip" android:layout_marginBottom="7.0dip" android:src="@drawable/buybtnselector" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="bottom" android:background="@drawable/store6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <ImageButton android:id="@id/buybtn6" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="50.0dip" android:layout_marginBottom="7.0dip" android:src="@drawable/buybtnselector" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="bottom" android:background="@drawable/store7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <ImageButton android:id="@id/buybtn7" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="50.0dip" android:layout_marginBottom="7.0dip" android:src="@drawable/buybtnselector" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

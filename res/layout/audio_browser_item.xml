@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_item" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/audio_browser_item_size">
+        <ImageView android:layout_gravity="center" android:id="@id/cover" android:layout_width="@dimen/audio_browser_item_size" android:layout_height="@dimen/audio_browser_item_size" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/cover">
+            <TextView android:textSize="20.0sp" android:textColor="?list_title" android:ellipsize="middle" android:layout_gravity="center_vertical" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/title" android:maxLines="1" android:singleLine="true" />
+            <TextView android:textSize="14.0sp" android:textColor="?list_subtitle" android:ellipsize="middle" android:id="@id/subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/artist" android:maxLines="1" android:singleLine="true" />
+        </LinearLayout>
+        <ImageView android:id="@id/item_more" android:background="@drawable/ic_more" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <View android:id="@id/footer" android:background="?item_footer" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/id" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/electrict_power_mother_text" android:background="@drawable/electrict_power_bg" android:layout_width="@dimen/electrict_poweritem_width" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/electrict_poweritem_marginleft" android:layout_marginTop="@dimen/electrict_poweritem_top" android:layout_marginRight="6.0dip" />
+    <TextView android:textColor="@color/electrict_power_text" android:id="@id/electrict_power_total_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/electrict_poweritem_top" android:text="@string/electirct_power_total" android:layout_toRightOf="@id/electrict_power_mother_text" />
+    <TextView android:textSize="@dimen/electrict_poweritem_text_size" android:textColor="@color/electrict_power_text" android:id="@id/electrict_power_user" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/electrict_power_mother_text" android:layout_below="@id/electrict_power_total_text" />
+    <TextView android:textColor="@color/electrict_power_text" android:id="@id/electrict_power_dw_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:text="@string/electirct_power_du" android:layout_toRightOf="@id/electrict_power_user" android:layout_alignBottom="@id/electrict_power_user" />
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/message_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/index_topbar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="horizontal" android:id="@id/faq_title_layout" android:background="@drawable/index_topbar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageButton android:id="@id/about_back" android:background="@drawable/nav_left_icon_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/dimen_size_s20" android:textColor="@android:color/white" android:id="@id/deviceList_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/message" android:layout_toRightOf="@id/about_back" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ListView android:id="@id/msglist" android:background="@color/message_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/listview_selector" android:divider="@color/message_bg" android:dividerHeight="1.0dip" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/shadowlayer" android:background="@null" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

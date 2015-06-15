@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/index_topbar" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:background="@drawable/index_topbar" android:layout_width="fill_parent" android:layout_height="@dimen/commoncontent_topmargin" />
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/behindLayout" android:background="@drawable/index_topbar" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ListView android:id="@id/behindList" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@android:color/transparent" android:dividerHeight="0.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/aboveLayout" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_size_s160">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dimen_size_s100">
+                    <RelativeLayout android:id="@id/sceneImageLayout" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_size_s100">
+                        <ImageView android:id="@id/sceneImage" android:layout_width="@dimen/dimen_size_s80" android:layout_height="@dimen/dimen_size_s80" android:src="@drawable/addscene_image" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                    <HorizontalScrollView android:id="@id/imagelist" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_size_s60" android:layout_toRightOf="@id/sceneImageLayout" android:layout_alignParentBottom="true">
+                        <LinearLayout android:orientation="horizontal" android:id="@id/imageLayout" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+                    </HorizontalScrollView>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dimen_size_s50" android:layout_marginTop="@dimen/dimen_size_s10">
+                    <RelativeLayout android:id="@id/r1" android:layout_width="@dimen/dimen_size_s80" android:layout_height="@dimen/dimen_size_s50">
+                        <TextView android:textColor="#ff727171" android:id="@id/scenename" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerHorizontal="true" />
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s10" android:src="@drawable/addscene_line2" android:layout_below="@id/scenename" android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_size_s30" android:layout_toRightOf="@id/r1" android:layout_alignParentBottom="true">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                            <TextView android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/processTask1" />
+                            <TextView android:textColor="@android:color/white" android:id="@id/taskNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+                            <TextView android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/processTask2" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+            <ListView android:id="@id/aboveList" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@android:color/transparent" android:dividerHeight="0.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/expendLayout" android:background="#ff161415" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/addscene_expand" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

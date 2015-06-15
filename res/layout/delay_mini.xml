@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/deviceconfigure_mainbg" android:background="@drawable/mainbg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@null" android:layout_width="wrap_content" android:layout_height="@dimen/timer_time_height" android:layout_marginTop="60.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="Delay task" android:drawableLeft="@drawable/delaytask_clock_gray" android:drawablePadding="5.0dip" android:layout_centerVertical="true" />
+        <com.kankunit.smartplugcronus.customview.SwitchButton android:id="@id/delay_switch" android:layout_width="@dimen/timer_switch_width" android:layout_height="@dimen/timer_switch_height" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/timer_list_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/delay_white_bg" android:background="@drawable/delay_white_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/dayll" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="16.0sp" android:layout_gravity="center_horizontal" android:id="@id/delay_mini_do1txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Execution is completed" />
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/delay_mini_do1img" android:background="@drawable/delay_time_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/timer_img" />
+                <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/delay_time_open_layout" android:background="@drawable/delay_time_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:background="@null" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                        <RelativeLayout android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.2">
+                            <TextView android:textSize="16.0sp" android:id="@id/delay_mini_open_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                        </RelativeLayout>
+                        <TextView android:textSize="14.0sp" android:textColor="@color/off_text" android:layout_gravity="center_vertical" android:id="@id/delay_mini_open_timetxt" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="After opening" android:layout_weight="0.5" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <TextView android:textSize="16.0sp" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/delay_mini_do2txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="is in the process of implementing" />
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/delay_mini_do2img" android:background="@drawable/delay_time_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/timer_img" />
+                <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/delay_time_close_layout" android:background="@drawable/delay_time_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:background="@null" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                        <RelativeLayout android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.2">
+                            <TextView android:textSize="16.0sp" android:id="@id/delay_mini_close_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                        </RelativeLayout>
+                        <TextView android:textSize="14.0sp" android:textColor="@color/off_text" android:layout_gravity="center_vertical" android:id="@id/delay_mini_close_timetxt" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="After Close" android:layout_weight="0.5" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <RelativeLayout android:layout_gravity="center_horizontal" android:background="@drawable/delay_time_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="45.0dip">
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:background="@null" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                        <RelativeLayout android:gravity="center_horizontal" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.2">
+                            <TextView android:textSize="16.0sp" android:id="@id/delay_mini_repeat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Only once" android:layout_centerInParent="true" />
+                        </RelativeLayout>
+                        <TextView android:textSize="14.0sp" android:textColor="@color/off_text" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="Cycle" android:layout_weight="0.5" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <TextView android:background="@color/gray" android:layout_width="wrap_content" android:layout_height="38.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
