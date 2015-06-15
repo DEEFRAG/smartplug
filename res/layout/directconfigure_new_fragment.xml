@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@color/none_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/mini_direct" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s100">
+        <RelativeLayout android:background="@drawable/mini_config_guild" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/mini_direct_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s80">
+        <TextView android:textSize="15.0sp" android:textColor="@android:color/black" android:id="@id/mini_config_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(No WiFi network, close the configuration)" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="15.0sp" android:textColor="@android:color/black" android:id="@id/title2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s1" android:text="Lost remote control, WiFI enhancement and some of the plug-in features" android:layout_below="@id/mini_config_title" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/mini_direct_p" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s20">
+        <RelativeLayout android:id="@id/direct_a_bg" android:background="@drawable/configure_k2_direct" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                <ImageButton android:layout_gravity="center_horizontal" android:id="@id/dodirectconfigure" android:background="@color/none_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/directconfig_dodirectconfigure_topmargin" android:src="@drawable/configure_dircet_ok" android:minWidth="@dimen/buttonminwidth" android:minHeight="@dimen/buttonminheight" android:contentDescription="@string/contentDescription" />
+                <ImageButton android:layout_gravity="center_horizontal" android:id="@id/dodirectconfiguredeep" android:background="@color/none_color" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/directconfig_dodirectconfigure_topmargin" android:src="@drawable/configure_direct_cancel" android:minWidth="@dimen/buttonminwidth" android:minHeight="@dimen/buttonminheight" android:contentDescription="@string/contentDescription" />
+                <ImageButton android:layout_gravity="center_horizontal" android:id="@id/dodirectconfiguredeepam" android:background="@color/none_color" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/directconfig_dodirectconfigure_topmargin" android:src="@drawable/configure_direct_am" android:minWidth="@dimen/buttonminwidth" android:minHeight="@dimen/buttonminheight" android:contentDescription="@string/contentDescription" />
+            </FrameLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageButton android:id="@id/wifiButton" android:background="@drawable/mini_wifi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/netconfigure_questionmark_rightmargin" android:layout_marginBottom="@dimen/dimen_size_s50" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

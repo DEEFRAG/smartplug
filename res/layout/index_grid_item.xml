@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/griditemview" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/itemrl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/item_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/index_adddevice_icon" android:scaleType="centerCrop" android:layout_centerHorizontal="true" android:contentDescription="@string/contentDescription" />
+        <ImageView android:id="@id/selectimg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_selected_img" android:scaleType="centerCrop" android:layout_centerHorizontal="true" android:contentDescription="@string/contentDescription" />
+        <ImageView android:id="@id/offlineoverlay" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_offline_overlay" android:scaleType="centerCrop" android:layout_centerHorizontal="true" android:contentDescription="@string/contentDescription" />
+        <ImageView android:id="@id/sceneSelectimg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/index_scene_select" android:scaleType="centerCrop" android:layout_centerHorizontal="true" android:contentDescription="@string/contentDescription" />
+        <ImageView android:id="@id/item_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/index_light_badge_black" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:contentDescription="@string/contentDescription" />
+    </RelativeLayout>
+    <TextView android:textColor="@android:color/black" android:id="@id/item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/itemrl" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="12.0sp" android:id="@id/item_devicename" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/item_text" android:layout_centerHorizontal="true" />
+    <TextView android:id="@id/id" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/itemrl" android:layout_centerHorizontal="true" />
+    <TextView android:id="@id/shortcutid" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/itemrl" android:layout_centerHorizontal="true" />
+    <TextView android:id="@id/shortcutType" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/itemrl" android:layout_centerHorizontal="true" />
+    <TextView android:id="@id/devicemac" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/itemrl" android:layout_centerHorizontal="true" />
+    <TextView android:id="@id/pluginmac" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/itemrl" android:layout_centerHorizontal="true" />
+    <TextView android:id="@id/plugintype" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/itemrl" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="#ff0099cc" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="50.0sp" android:textStyle="bold" android:textColor="#ff33b5e5" android:gravity="center" android:id="@id/fullscreen_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true" />
+    <FrameLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@id/fullscreen_content_controls" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?buttonBarStyle">
+            <Button android:id="@id/dummy_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" style="?buttonBarButtonStyle" />
+            <Button android:id="@id/testbtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Connection" />
+            <Button android:id="@id/testbtn1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Register" />
+            <Button android:id="@id/testbtn2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Log in" />
+            <Button android:id="@id/testbtn3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Send" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

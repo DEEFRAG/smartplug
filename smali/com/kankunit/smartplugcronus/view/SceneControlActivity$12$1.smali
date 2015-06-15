@@ -1,0 +1,98 @@
+.class Lcom/kankunit/smartplugcronus/view/SceneControlActivity$12$1;
+.super Ljava/lang/Object;
+.source "SceneControlActivity.java"
+
+# interfaces
+.implements Lcom/kankunit/smartplugcronus/customview/SuperProgressDialog$OnTimeOutListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/kankunit/smartplugcronus/view/SceneControlActivity$12;->onClick(Landroid/content/DialogInterface;I)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$1:Lcom/kankunit/smartplugcronus/view/SceneControlActivity$12;
+
+
+# direct methods
+.method constructor <init>(Lcom/kankunit/smartplugcronus/view/SceneControlActivity$12;)V
+    .locals 0
+
+    .prologue
+    .line 1
+    iput-object p1, p0, Lcom/kankunit/smartplugcronus/view/SceneControlActivity$12$1;->this$1:Lcom/kankunit/smartplugcronus/view/SceneControlActivity$12;
+
+    .line 1282
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onTimeOut(Lcom/kankunit/smartplugcronus/customview/SuperProgressDialog;)V
+    .locals 4
+    .param p1, "dialog"    # Lcom/kankunit/smartplugcronus/customview/SuperProgressDialog;
+
+    .prologue
+    .line 1286
+    iget-object v0, p0, Lcom/kankunit/smartplugcronus/view/SceneControlActivity$12$1;->this$1:Lcom/kankunit/smartplugcronus/view/SceneControlActivity$12;
+
+    # getter for: Lcom/kankunit/smartplugcronus/view/SceneControlActivity$12;->this$0:Lcom/kankunit/smartplugcronus/view/SceneControlActivity;
+    invoke-static {v0}, Lcom/kankunit/smartplugcronus/view/SceneControlActivity$12;->access$0(Lcom/kankunit/smartplugcronus/view/SceneControlActivity$12;)Lcom/kankunit/smartplugcronus/view/SceneControlActivity;
+
+    move-result-object v0
+
+    .line 1287
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    iget-object v2, p0, Lcom/kankunit/smartplugcronus/view/SceneControlActivity$12$1;->this$1:Lcom/kankunit/smartplugcronus/view/SceneControlActivity$12;
+
+    # getter for: Lcom/kankunit/smartplugcronus/view/SceneControlActivity$12;->this$0:Lcom/kankunit/smartplugcronus/view/SceneControlActivity;
+    invoke-static {v2}, Lcom/kankunit/smartplugcronus/view/SceneControlActivity$12;->access$0(Lcom/kankunit/smartplugcronus/view/SceneControlActivity$12;)Lcom/kankunit/smartplugcronus/view/SceneControlActivity;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Lcom/kankunit/smartplugcronus/view/SceneControlActivity;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v2
+
+    .line 1288
+    const v3, 0x7f0c0238
+
+    invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-static {v2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 1287
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 1289
+    const/4 v2, 0x1
+
+    .line 1285
+    invoke-static {v0, v1, v2}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
+
+    move-result-object v0
+
+    .line 1290
+    invoke-virtual {v0}, Landroid/widget/Toast;->show()V
+
+    .line 1291
+    return-void
+.end method

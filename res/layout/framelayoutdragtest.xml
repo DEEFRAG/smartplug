@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/mainfl" android:background="@drawable/mainbg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.kankunit.smartplugcronus.customview.DragDropView android:background="@android:color/white" android:visibility="gone" android:layout_width="300.0dip" android:layout_height="300.0dip" />
+    <ImageView android:id="@id/testiv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="400.0dip" android:src="@drawable/master_control_btn1_gray" />
+</FrameLayout>

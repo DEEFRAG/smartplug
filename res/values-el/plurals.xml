@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="search_found_results_quantity">
+        <item quantity="other">%d αποτελέσματα βρέθηκαν</item>
+        <item quantity="one">%d αποτέλεσμα βρέθηκε</item>
+    </plurals>
+    <plurals name="songs_quantity">
+        <item quantity="other">%d τραγούδια</item>
+        <item quantity="one">1 τραγούδι</item>
+    </plurals>
+    <plurals name="albums_quantity">
+        <item quantity="other">%d άλμπουμς</item>
+        <item quantity="one">1 άλμπουμ</item>
+    </plurals>
+    <plurals name="subfolders_quantity">
+        <item quantity="other">%d υποφάκελοι</item>
+        <item quantity="one">1 υποφάκελος</item>
+    </plurals>
+    <plurals name="mediafiles_quantity">
+        <item quantity="other">%d αρχεία μέσων</item>
+        <item quantity="one">1 αρχείο μέσων</item>
+    </plurals>
+    <plurals name="videos_quantity">
+        <item quantity="other">%d βίντεο</item>
+        <item quantity="one">1 βίντεο</item>
+    </plurals>
+    <plurals name="track_channels_info_quantity">
+        <item quantity="other">%1$d κανάλια</item>
+        <item quantity="one">1 κανάλι</item>
+    </plurals>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/menuMain" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s80">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_size_s25" android:layout_marginTop="@dimen/dimen_size_s10">
+            <ImageView android:id="@id/person_image" android:layout_width="@dimen/dimen_size_s60" android:layout_height="@dimen/dimen_size_s60" android:src="@drawable/person_image" />
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_size_s10">
+                <TextView android:textSize="@dimen/dimen_size_s18" android:textColor="#ff8f9ba7" android:id="@id/nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="18668430261" />
+                <TextView android:textSize="@dimen/dimen_size_s18" android:textColor="#ffb5b5b5" android:id="@id/kscore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="K Points: 0" android:drawableLeft="@drawable/diamond" />
+            </LinearLayout>
+        </LinearLayout>
+        <ListView android:id="@id/menuList" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s25" android:listSelector="@drawable/item_select" android:divider="@android:color/transparent" android:dividerHeight="@dimen/dimen_size_s5" />
+    </LinearLayout>
+</LinearLayout>

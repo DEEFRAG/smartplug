@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/menuMain" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s80">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/logo" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_size_s20" android:layout_marginTop="@dimen/dimen_size_s10" android:layout_marginRight="@dimen/dimen_size_s20">
+            <RelativeLayout android:id="@id/kshopbtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+                <ImageView android:id="@id/shopImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_shopping" android:layout_centerHorizontal="true" />
+                <TextView android:textColor="@color/menutextselector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/store" android:layout_below="@id/shopImage" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/sitebtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                <ImageView android:id="@id/webImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_web" android:layout_centerHorizontal="true" />
+                <TextView android:textColor="@color/menutextselector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/web" android:layout_below="@id/webImage" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/bbs_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                <ImageView android:id="@id/bbsImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_luntan" android:layout_centerHorizontal="true" />
+                <TextView android:textColor="@color/menutextselector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bbs" android:layout_below="@id/bbsImage" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s15" android:src="@drawable/line_long" />
+        <RelativeLayout android:id="@id/homeLayout" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_size_s55" android:layout_marginLeft="@dimen/dimen_size_s5">
+            <ImageView android:id="@id/homeImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_home1" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/dimen_size_s15" android:textColor="@android:color/white" android:id="@id/homeText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_size_s15" android:text="@string/mainMenu" android:layout_toRightOf="@id/homeImage" android:layout_centerVertical="true" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/line_short" android:layout_alignLeft="@id/homeText" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/devicelistLayout" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_size_s55" android:layout_marginLeft="@dimen/dimen_size_s5">
+            <ImageView android:id="@id/deviceImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_list" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/dimen_size_s15" android:textColor="@android:color/white" android:id="@id/deviceText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_size_s15" android:text="@string/deviceList" android:layout_toRightOf="@id/deviceImage" android:layout_centerVertical="true" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/line_short" android:layout_alignLeft="@id/deviceText" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/setLayout" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_size_s55" android:layout_marginLeft="@dimen/dimen_size_s5">
+            <ImageView android:id="@id/setImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_setting" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/dimen_size_s15" android:textColor="@android:color/white" android:id="@id/setText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_size_s15" android:text="@string/setting" android:layout_toRightOf="@id/setImage" android:layout_centerVertical="true" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/line_short" android:layout_alignLeft="@id/setText" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/faqLayout" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_size_s55" android:layout_marginLeft="@dimen/dimen_size_s5">
+            <ImageView android:id="@id/faqImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_faq" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/dimen_size_s15" android:textColor="@android:color/white" android:id="@id/faqText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_size_s15" android:text="@string/FAQ" android:layout_toRightOf="@id/faqImage" android:layout_centerVertical="true" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/line_short" android:layout_alignLeft="@id/faqText" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/aboutUsLayout" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_size_s55" android:layout_marginLeft="@dimen/dimen_size_s5">
+            <ImageView android:id="@id/aboutUsImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_about" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/dimen_size_s15" android:textColor="@android:color/white" android:id="@id/aboutUsText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_size_s15" android:text="@string/aboutUs" android:layout_toRightOf="@id/aboutUsImage" android:layout_centerVertical="true" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/line_short" android:layout_alignLeft="@id/aboutUsText" android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

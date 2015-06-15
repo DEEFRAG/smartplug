@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/back" android:background="@drawable/back" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="19.0sp" android:id="@id/mini_config_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="63.0dip" android:text="You are currently not connected to WLAN" android:layout_above="@id/mini_config_light" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40.0dip" android:text="Please go to WLAN Settings page to set up" android:layout_above="@id/mini_config_light" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/mini_config_light" android:background="@drawable/mini_config_help_phone" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:contentDescription="@string/timer_img" />
+    <ImageButton android:id="@id/alreadyConenction" android:background="@drawable/mini_connect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_below="@id/mini_config_light" android:layout_centerInParent="true" android:contentDescription="@string/timer_img" />
+</RelativeLayout>

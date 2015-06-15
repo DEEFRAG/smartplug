@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?font_default" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ProgressBar android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleLarge" />
+        <ImageView android:layout_gravity="center" android:id="@id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" />
+        <ImageButton android:layout_gravity="bottom|center|left" android:id="@id/play" android:background="@drawable/ic_play_circle" android:visibility="invisible" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="10.0dip" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="#aaffffff" android:layout_gravity="bottom|center|right" android:id="@id/length" android:background="@drawable/video_list_length_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" />
+    </FrameLayout>
+    <ListView android:id="@android:id/list" android:paddingBottom="@dimen/listview_bottom_padding" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:divider="#00000000" android:fastScrollEnabled="true" />
+</LinearLayout>

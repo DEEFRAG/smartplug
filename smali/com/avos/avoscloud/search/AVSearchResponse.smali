@@ -1,0 +1,23 @@
+.class public Lcom/avos/avoscloud/search/AVSearchResponse;
+.super Ljava/lang/Object;
+.source "AVSearchResponse.java"
+
+
+# instance fields
+.field public hits:I
+
+.field public results:[Ljava/util/Map;
+
+.field public sid:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 5
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

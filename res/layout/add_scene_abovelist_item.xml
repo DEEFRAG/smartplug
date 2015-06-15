@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_size_s100"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_size_s90">
+        <RelativeLayout android:id="@id/imageLayout" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:id="@id/deviceImage" android:background="@drawable/addscene_type1" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            <ImageView android:id="@id/directionImage" android:background="@drawable/addscene_direction" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s5" android:layout_below="@id/deviceImage" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/layout1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dimen_size_s89">
+                <TextView android:textColor="#ff727171" android:ellipsize="end" android:id="@id/abovetitle" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/smartplugE" android:maxLines="3" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <LinearLayout android:background="@drawable/addscene_line3" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_size_s1" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/operationLayout" android:background="#ffd1d1d1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_size_s30" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/addImage" android:background="@drawable/addscene_addbutton" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textColor="#ff636b7c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/insert" android:layout_below="@id/addImage" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/editImage" android:background="@drawable/addscene_editbutton" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textColor="#ff636b7c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/edit" android:layout_below="@id/editImage" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dimen_size_s30" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/deleteImage" android:background="@drawable/addscene_deletebutton" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textColor="#ff636b7c" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/delete" android:layout_below="@id/deleteImage" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

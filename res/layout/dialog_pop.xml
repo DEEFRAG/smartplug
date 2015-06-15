@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/transparent_background" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/corners_bg" android:layout_width="260.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:textSize="17.0sp" android:gravity="center" android:id="@id/dialog_title" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="15.0sp" android:gravity="center" android:id="@id/dialog_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_below="@id/dialog_title" android:layout_centerHorizontal="true" />
+        <ListView android:id="@id/dialog_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="@color/blue" android:dividerHeight="1.0dip" android:layout_below="@id/dialog_message" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

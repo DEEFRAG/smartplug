@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff2f2f2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/ivLogo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:src="@drawable/ic_launcher" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="18.0dip" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" />
+            <ProgressBar android:id="@id/pbDownload" android:layout_width="fill_parent" android:layout_height="12.0dip" android:max="100" android:progress="0" android:progressDrawable="@drawable/ab_bg_black" style="?android:attr/progressBarStyleHorizontal" />
+            <TextView android:textSize="12.0dip" android:textStyle="bold" android:id="@id/tvProcess" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Downloaded 0%" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

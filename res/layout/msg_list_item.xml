@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/msgalerticon" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/msg_alert_blue_icon" android:layout_centerVertical="true" android:contentDescription="@string/contentDescription" />
+    <LinearLayout android:orientation="vertical" android:id="@id/msgalerttime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/msgalerticon" android:layout_centerVertical="true">
+        <TextView android:textSize="27.0sp" android:id="@id/msgalertday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="13th" />
+        <TextView android:textSize="21.0sp" android:id="@id/msgalerthour" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12:00" />
+    </LinearLayout>
+    <ImageView android:id="@id/msgsplit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/msg_split_blue" android:layout_toRightOf="@id/msgalerttime" android:layout_centerVertical="true" android:contentDescription="@string/contentDescription" />
+    <TextView android:id="@id/msgalerttxt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Unidentified objects into your home" android:layout_toRightOf="@id/msgsplit" android:layout_centerVertical="true" />
+</RelativeLayout>

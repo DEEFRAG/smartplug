@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/delay_mini_repeat1" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="60.0dip">
+        <TextView android:id="@id/delay_mini_repeat_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="Repeat: 1 time" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/delay_ischecked1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="50.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/timer_img" />
+    </RelativeLayout>
+    <View android:background="#ffdedfe1" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</RelativeLayout>

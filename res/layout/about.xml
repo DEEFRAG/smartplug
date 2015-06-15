@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:orientation="horizontal" android:background="@drawable/index_topbar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageButton android:id="@id/about_back" android:background="@drawable/nav_left_icon_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/dimen_size_s20" android:textColor="@android:color/white" android:id="@id/deviceList_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/aboutKonke" android:layout_toRightOf="@id/about_back" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/about_ver" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginTop="80.0dip" android:drawableTop="@drawable/about_logo" android:drawablePadding="5.0dip" android:layout_weight="0.8" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="#fff7f8f8" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="15.0sp" android:gravity="center" android:id="@id/now_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/about_gs" />
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff00b26d" android:gravity="center" android:id="@id/now_a" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="http://www.ikonke.com" />
+            <ImageView android:gravity="center" android:background="@drawable/about_qq" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:contentDescription="@string/timer_img" />
+            <TextView android:textSize="15.0sp" android:gravity="center" android:id="@id/now_v" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/about_qq" />
+            <TextView android:gravity="center" android:id="@id/now_ts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="418261791" />
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#ff00b26d" android:gravity="center" android:id="@id/worn_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_dh" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/shadowlayer" android:background="@null" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

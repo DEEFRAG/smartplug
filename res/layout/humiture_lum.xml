@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/temperature_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/titlebar" android:background="@drawable/index_topbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@string/timer_img" />
+    <HorizontalScrollView android:id="@id/mainview" android:layout_width="fill_parent" android:layout_height="@dimen/barchartscrollheight" android:layout_marginTop="@dimen/linechartscrolltopmartin">
+        <LinearLayout android:id="@id/lum_chat_layout" android:background="@null" android:layout_width="@dimen/barchartscrollwidth" android:layout_height="@dimen/barchartscrollheight">
+            <com.kankunit.smartplugcronus.customview.SuperBarChatView android:id="@id/lum_bar" android:layout_width="@dimen/barchartscrollwidth" android:layout_height="@dimen/barchartscrollheight" />
+        </LinearLayout>
+    </HorizontalScrollView>
+    <TextView android:textColor="@android:color/darker_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/linechartpasshourlbltopmargin" android:text="@string/old_lum_text" android:layout_below="@id/mainview" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/linechartcurrenttemperaturearealeftmargin" android:layout_marginTop="@dimen/linechartcurrenttemperatureareatopmargin">
+        <TextView android:textColor="@android:color/darker_gray" android:id="@id/currenttemplbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/now_lum_text" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/humiture_now_text_size" android:textColor="#ffff0000" android:id="@id/currenttemp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/linechartcurrenttemperaturetxtleftmargin" android:layout_toRightOf="@id/currenttemplbl" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/linechartcelsiustopmargin" android:layout_toRightOf="@id/currenttemp">
+            <TextView android:textSize="@dimen/electrict_power_now_text_size" android:textStyle="bold" android:textColor="@android:color/darker_gray" android:id="@id/levellbl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/electrict_layout_margin" android:text="@string/level_lum_text" android:drawableBottom="@drawable/lum0" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="@dimen/linechartbottomareaheight" android:layout_alignParentBottom="true">
+        <RelativeLayout android:id="@id/tiprl" android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="@dimen/linecharttipheight">
+            <TextView android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:text="@string/reminder_lum_text" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/linechartbottomcontenttopmargin" android:layout_below="@id/tiprl" android:layout_centerHorizontal="true">
+            <ImageButton android:id="@id/tipicon" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/humiture_lum_buttonimg_marginleft" android:layout_marginTop="@dimen/humiture_lum_buttonimg_margintop" android:src="@drawable/lum_info" android:layout_alignParentLeft="true" android:contentDescription="@string/timer_img" />
+            <TextView android:textColor="@color/blue" android:id="@id/tip1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/humiture_lum_buttontext1_marginleft" android:layout_marginTop="@dimen/humiture_lum_buttontext1_margintop" android:text="@string/lum_info_4" android:layout_toRightOf="@id/tipicon" />
+            <TextView android:textColor="@color/blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/humiture_lum_buttontext2_marginleft" android:layout_marginTop="@dimen/humiture_lum_buttontext2_margintop" android:text="@string/lum_info_5" android:layout_toRightOf="@id/tipicon" android:layout_below="@id/tip1" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

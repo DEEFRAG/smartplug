@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#fff8f8f8" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/acc_title_layout" android:background="@drawable/index_topbar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@id/about_back" android:background="@drawable/nav_left_icon_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/dimen_size_s20" android:textColor="@android:color/white" android:id="@id/deviceList_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/acc_manager_title" android:layout_toRightOf="@id/about_back" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/dimen_size_s20" android:textColor="@android:color/white" android:id="@id/set_back" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/acc_manager_title" android:drawableLeft="@drawable/timerset_back" android:drawablePadding="5.0dip" android:layout_toRightOf="@id/about_back" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageButton android:layout_gravity="center_horizontal" android:id="@id/acc_head" android:background="@drawable/acc_manager_ico" android:layout_width="@dimen/dimen_size_s80" android:layout_height="@dimen/dimen_size_s80" android:layout_marginTop="20.0dip" android:contentDescription="@string/timer_img" />
+    <TextView android:layout_gravity="center_horizontal" android:id="@id/acc_head_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="Click to change picture" />
+    <ScrollView android:id="@id/scene_control_scroll" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="#ffdedfe1" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <RelativeLayout android:id="@id/acc_points_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                <TextView android:id="@id/acc_points_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="K Points" android:layout_centerVertical="true" />
+                <TextView android:gravity="center_vertical" android:id="@id/acc_points" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="0 points" android:drawableRight="@drawable/set_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="#ffdedfe1" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <View android:background="#ffdedfe1" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="20.0dip" />
+            <RelativeLayout android:id="@id/acc_nickname_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                <TextView android:id="@id/acc_nickname_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="Nickname" android:layout_centerVertical="true" />
+                <TextView android:gravity="center_vertical" android:id="@id/acc_nickname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="nickname" android:drawableRight="@drawable/set_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="#ffdedfe1" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <RelativeLayout android:id="@id/acc_sex_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                <TextView android:id="@id/acc_sex_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="Sex" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/acc_sex_man" android:background="@drawable/acc_sex_man" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/acc_sex_women" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/acc_sex_women" android:background="@drawable/acc_sex_women" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="#ffdedfe1" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <RelativeLayout android:id="@id/acc_birthday_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                <TextView android:id="@id/acc_birthday_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="Birthday" android:layout_centerVertical="true" />
+                <TextView android:gravity="center_vertical" android:id="@id/acc_birthday" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="nickname" android:drawableRight="@drawable/set_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="#ffdedfe1" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <View android:background="#ffdedfe1" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="20.0dip" />
+            <RelativeLayout android:id="@id/acc_pwd_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                <TextView android:id="@id/acc_pwd_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="Change Password" android:layout_centerVertical="true" />
+                <ImageView android:gravity="center_vertical" android:id="@id/acc_pwd" android:background="@drawable/set_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="#ffdedfe1" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <RelativeLayout android:id="@id/acc_myid_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                <TextView android:id="@id/acc_myid_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="My ID" android:layout_centerVertical="true" />
+                <TextView android:gravity="center_vertical" android:id="@id/acc_myid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="myid" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="#ffdedfe1" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <View android:background="#ffdedfe1" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="20.0dip" />
+            <RelativeLayout android:id="@id/acc_quit_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                <TextView android:id="@id/acc_quit_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="Exit the current account " android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:background="#ffdedfe1" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <RelativeLayout android:background="@null" android:layout_width="fill_parent" android:layout_height="60.0dip">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:id="@id/shadowlayer" android:background="@null" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

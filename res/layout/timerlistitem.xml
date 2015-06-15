@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/timer_main_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/timerlist_item_height">
+        <TextView android:id="@id/id" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:id="@id/timerid" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:id="@id/openen" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:id="@id/closeen" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:id="@id/open_realtime" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:id="@id/close_realtime" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textColor="@color/scene_dark_gray" android:id="@id/opentext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/timer_margin_10" android:layout_marginTop="@dimen/timer_margintop_text" android:text="@string/timerlist_open_text" android:layout_alignTop="@id/open_time" />
+        <TextView android:textSize="@dimen/timer_time_text_size" android:textColor="@color/timerlist_time" android:id="@id/open_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/timer_timelefttext" android:layout_toRightOf="@id/opentext" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/timer_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/timer_margin_10" android:src="@drawable/timerlist_line" android:layout_toRightOf="@id/open_time" android:layout_centerVertical="true" android:contentDescription="@string/timer_img" />
+        <TextView android:textSize="@dimen/timer_time_text_size" android:textColor="@color/timerlist_time" android:id="@id/close_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/timer_margin_10" android:layout_toRightOf="@id/timer_img" android:layout_centerVertical="true" />
+        <TextView android:textColor="@color/scene_dark_gray" android:id="@id/closetext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/timer_timelefttext" android:layout_marginTop="@dimen/timer_margintop_text" android:text="@string/timerlist_close_text" android:layout_toRightOf="@id/close_time" android:layout_alignTop="@id/close_time" />
+        <com.kankunit.smartplugcronus.customview.SwitchButton android:id="@id/timerlist_en" android:layout_width="@dimen/timer_switch_width" android:layout_height="@dimen/timer_switch_height" android:layout_marginTop="@dimen/timer_margin_30" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <TextView android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/repeat_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/timer_trigon_margin" android:layout_marginBottom="13.0dip" android:singleLine="true" android:drawableLeft="@drawable/timerlist_clock" android:drawablePadding="5.0dip" />
+</LinearLayout>

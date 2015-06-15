@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/itemrl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/index_adddevice_icon" android:scaleType="centerCrop" android:layout_centerHorizontal="true" android:contentDescription="@string/contentDescription" />
+        <ImageView android:id="@id/selectimg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_selected_img" android:scaleType="centerCrop" android:layout_centerHorizontal="true" android:contentDescription="@string/contentDescription" />
+        <ImageView android:id="@id/item_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:src="@drawable/addshortcut_newicon" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:contentDescription="@string/contentDescription" />
+    </RelativeLayout>
+    <TextView android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/itemrl" android:layout_centerHorizontal="true" />
+    <TextView android:id="@id/id" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/itemrl" android:layout_centerHorizontal="true" />
+    <TextView android:id="@id/shortcutid" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/itemrl" android:layout_centerHorizontal="true" />
+    <TextView android:id="@id/deviceid" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/itemrl" android:layout_centerHorizontal="true" />
+</RelativeLayout>

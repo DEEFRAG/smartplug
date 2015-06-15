@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost android:id="@android:id/tabhost" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TabWidget android:id="@android:id/tabs" android:background="?background_header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <FrameLayout android:id="@android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <org.videolan.vlc.widget.FlingViewGroup android:id="@id/fling_view_group" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ListView android:id="@id/albums" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:paddingBottom="@dimen/listview_bottom_padding" android:nextFocusLeft="@id/albums" android:nextFocusRight="@id/albums" android:nextFocusUp="@id/ml_menu_search" android:nextFocusDown="@id/albums" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fastScrollEnabled="true" />
+                <ListView android:id="@id/songs" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:paddingBottom="@dimen/listview_bottom_padding" android:nextFocusLeft="@id/songs" android:nextFocusRight="@id/songs" android:nextFocusUp="@id/ml_menu_search" android:nextFocusDown="@id/songs" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fastScrollEnabled="true" />
+            </org.videolan.vlc.widget.FlingViewGroup>
+        </FrameLayout>
+    </LinearLayout>
+</TabHost>

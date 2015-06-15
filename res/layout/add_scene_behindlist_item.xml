@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_size_s80"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/deviceImageLayout" android:layout_width="@dimen/dimen_size_s90" android:layout_height="fill_parent">
+        <ImageView android:id="@id/deviceImage" android:background="@drawable/addscene_type1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layout1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="@dimen/dimen_size_s79">
+            <TextView android:textSize="@dimen/dimen_size_s15" android:textColor="@android:color/white" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_size_s10" android:text="@string/smartplugE" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/dimen_size_s10" android:textColor="@android:color/darker_gray" android:id="@id/devicename" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_size_s10" android:text="" android:layout_below="@id/title" />
+        </RelativeLayout>
+        <LinearLayout android:background="@drawable/addscene_behind_line" android:layout_width="fill_parent" android:layout_height="@dimen/dimen_size_s1" />
+    </LinearLayout>
+</LinearLayout>

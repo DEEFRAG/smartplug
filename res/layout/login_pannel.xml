@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:paddingBottom="@dimen/dimen_size_s10" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/loginicon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s80" android:src="@drawable/login_icon" android:layout_centerHorizontal="true" android:contentDescription="@string/contentDescription" />
+    <RelativeLayout android:id="@id/mLayout" android:background="@drawable/login_input_bg" android:layout_width="@dimen/dimen_size_s300" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s30" android:layout_below="@id/loginicon" android:layout_centerHorizontal="true">
+        <EditText android:textColor="@android:color/black" android:id="@id/mobilenum" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_size_s20" android:hint="Please enter your mobile phone number" android:singleLine="true" android:layout_centerVertical="true" android:inputType="number" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/pLayout" android:background="@drawable/login_input_bg" android:layout_width="@dimen/dimen_size_s300" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s10" android:layout_below="@id/mLayout" android:layout_centerHorizontal="true">
+        <EditText android:textColor="@android:color/black" android:id="@id/pwd" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_size_s20" android:hint="Please enter your password" android:singleLine="true" android:layout_centerVertical="true" android:inputType="textPassword" />
+        <ImageButton android:background="@drawable/login_question_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="Forgot Your Password?" />
+    </RelativeLayout>
+    <Button android:textColor="@color/white" android:id="@id/dologin" android:background="@drawable/loginbtn_selector" android:layout_width="@dimen/dimen_size_s300" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s30" android:text="@string/login" android:layout_below="@id/pLayout" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:layout_width="@dimen/dimen_size_s300" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <Button android:textSize="20.0sp" android:textColor="@color/black" android:id="@id/forgetPassword" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s5" android:text="@string/forgetPassword" android:layout_alignParentLeft="true" />
+        <Button android:textSize="20.0sp" android:textColor="@color/black" android:id="@id/registerbtn" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s5" android:text="@string/doregister" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

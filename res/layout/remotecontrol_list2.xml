@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/devicelist_bg" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/scene_control_menu" android:background="@null" android:visibility="gone" android:layout_width="@dimen/scene_control_menu_size" android:layout_height="@dimen/scene_control_menu_width" android:src="@drawable/scene_control_menu_more" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@string/timer_img" />
+    <RelativeLayout android:orientation="horizontal" android:background="@drawable/index_topbar" android:layout_width="fill_parent" android:layout_height="@dimen/commoncontent_topmargin" />
+    <ListView android:id="@id/devicelist" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@android:color/white" />
+</LinearLayout>

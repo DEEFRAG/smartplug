@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="timer_title_clock">10.0dip</dimen>
+    <dimen name="dimen_size_s5">5.0dip</dimen>
+    <dimen name="dimen_size_s10">10.0dip</dimen>
+    <dimen name="dimen_size_s20">20.0dip</dimen>
+    <dimen name="dimen_size_s30">30.0dip</dimen>
+    <dimen name="dimen_size_s40">40.0dip</dimen>
+    <dimen name="dimen_size_s50">50.0dip</dimen>
+    <dimen name="dimen_size_s60">60.0dip</dimen>
+    <dimen name="dimen_size_s70">70.0dip</dimen>
+    <dimen name="dimen_size_s80">80.0dip</dimen>
+    <dimen name="dimen_size_s90">90.0dip</dimen>
+    <dimen name="dimen_size_s1">1.0dip</dimen>
+</resources>

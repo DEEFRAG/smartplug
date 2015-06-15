@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/grey1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.8"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/scene_control_submenu_text" android:textColor="@color/white" android:gravity="center" android:id="@id/scene_control_menu_edit" android:layout_width="@dimen/scene_control_submenu_width" android:layout_height="@dimen/scene_control_submenu_height" android:layout_marginLeft="@dimen/scene_control_submenu_marginleft" android:text="@string/scene_menu_edit" android:drawableLeft="@drawable/abutton" />
+    <View android:background="#ffc0c0c0" android:layout_width="fill_parent" android:layout_height="1.0px" />
+    <TextView android:textSize="@dimen/scene_control_submenu_text" android:textColor="@color/white" android:gravity="center" android:id="@id/scene_control_menu_update" android:layout_width="@dimen/scene_control_submenu_width" android:layout_height="@dimen/scene_control_submenu_height" android:layout_marginLeft="@dimen/scene_control_submenu_marginleft" android:text="@string/scene_menu_update" android:drawableLeft="@drawable/vbutton" />
+</LinearLayout>

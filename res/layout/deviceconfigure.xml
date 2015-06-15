@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/deviceconfigure_mainbg" android:background="@drawable/mainbg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:background="@drawable/netconfigure_tab_board" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/actionbar_margin_top">
+        <Button android:textSize="15.0sp" android:textColor="@color/netconfigure_tabselected_color" android:id="@id/wirelessconfigurebtn" android:background="@drawable/netconfigure_wifi_tab_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="1.0dip" android:minHeight="1.0dip" android:text="@string/wificonfiguretxt" />
+        <Button android:textSize="15.0sp" android:textColor="@android:color/white" android:id="@id/directconfigurebtn" android:background="@drawable/netconfigure_tabbtn_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="1.0dip" android:minHeight="1.0dip" android:text="@string/directconfiguretxt" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/fragment_content" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

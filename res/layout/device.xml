@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/devicelist_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginTop="@dimen/dimen_size_s5">
+                <ImageButton android:id="@id/about_back" android:background="@drawable/nav_left_icon_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <TextView android:textSize="@dimen/dimen_size_s20" android:textColor="@android:color/white" android:id="@id/deviceList_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:text="@string/deviceList" android:layout_toRightOf="@id/about_back" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/titleLayout" android:layout_width="@dimen/dimen_size_s250" android:layout_height="@dimen/dimen_size_s90" android:layout_marginTop="@dimen/dimen_size_s20">
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:id="@id/devicelist_move" android:background="@drawable/devicelist_move_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </FrameLayout>
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+                            <ImageButton android:id="@id/deviceButton" android:background="@drawable/devicelist_device_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView android:textSize="@dimen/dimen_size_s15" android:textColor="@color/device_text_normal" android:id="@id/deviceText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s35" android:text="@string/device" android:layout_centerHorizontal="true" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                            <ImageButton android:id="@id/remoteControlButton" android:background="@drawable/devicelist_remotecontrol_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView android:textSize="@dimen/dimen_size_s15" android:textColor="@color/device_text_normal" android:id="@id/remoteControlText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s35" android:text="@string/remoteControl" android:layout_centerHorizontal="true" />
+                        </RelativeLayout>
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                            <ImageButton android:id="@id/infraredButton" android:background="@drawable/devicelist_other_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            <TextView android:textSize="@dimen/dimen_size_s15" android:textColor="@color/device_text_normal" android:id="@id/infraredText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_size_s35" android:text="@string/others" android:layout_centerHorizontal="true" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </FrameLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <android.support.v4.view.ViewPager android:layout_gravity="center" android:id="@id/vPager" android:background="#ffffffff" android:persistentDrawingCache="animation" android:layout_width="wrap_content" android:layout_height="0.0dip" android:flipInterval="30" android:layout_weight="1.0" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/shadowlayer" android:background="@null" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

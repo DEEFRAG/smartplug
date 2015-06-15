@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_size_s50" android:minHeight="@dimen/dimen_size_s50"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/item_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_size_s30" android:layout_centerVertical="true" android:contentDescription="@string/timer_img" />
+    <TextView android:textSize="@dimen/dimen_size_s15" android:textColor="@android:color/white" android:id="@id/item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_size_s15" android:text="@string/mainMenu" android:drawableRight="@null" android:drawablePadding="8.0dip" android:layout_toRightOf="@id/item_image" android:layout_centerVertical="true" />
+</RelativeLayout>

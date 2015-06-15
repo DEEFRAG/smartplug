@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/advanced_layout" android:layout_width="300.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <org.videolan.vlc.gui.expandable.SpeedSelector android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:background="?advanced_options_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <org.videolan.vlc.gui.expandable.TimeSleep android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:background="?advanced_options_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <org.videolan.vlc.gui.expandable.JumpToTime android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:background="?advanced_options_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/add_subtitle" android:background="@drawable/background_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/subtitle_label" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/equalizer" android:background="@drawable/background_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+        <ImageView android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="?ic_equalizer_normal_style" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/equalizer" />
+    </LinearLayout>
+</LinearLayout>
